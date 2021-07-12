@@ -1,0 +1,6 @@
+Designator,Package,Part Number,Notes
+"Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8",TO220,STP62NS04Z,FET
+"R1,R3",R_Axial,MBA02040C2491FRP00,2.49ohm Bias Resistor
+J4,IDC-Header 2x20 P2.54mm Vertical,SBH11-PBPC-D20-ST-BK,
+IC3,P2.54 Header,PPTC041LFBN-RC,VR Conditioner Socket
+U2,MOV,V14E14AUTO,
