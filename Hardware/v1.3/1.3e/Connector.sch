@@ -1,0 +1,489 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "1.3"
+Date "2021-09-01"
+Rev "E"
+Comp "DetonationEMS"
+Comment1 "detonationems.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 2150 2700 0    50   Input ~ 0
+IGN1
+Text GLabel 2650 2700 2    50   Input ~ 0
+IGN2
+Text GLabel 2650 2800 2    50   Input ~ 0
+IGN3
+Text GLabel 2150 2800 0    50   Input ~ 0
+IGN4
+Text GLabel 2150 2100 0    50   Input ~ 0
+INJ1
+Text GLabel 2150 2200 0    50   Input ~ 0
+INJ2
+Text GLabel 2150 2300 0    50   Input ~ 0
+INJ3
+$Comp
+L power:+BATT #PWR0162
+U 1 1 60D0C087
+P 4200 2550
+F 0 "#PWR0162" H 4200 2400 50  0001 C CNN
+F 1 "+BATT" V 4200 2700 50  0000 L CNN
+F 2 "" H 4200 2550 50  0001 C CNN
+F 3 "" H 4200 2550 50  0001 C CNN
+	1    4200 2550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2650 2900 2    50   Input ~ 0
+Step-B1
+Text GLabel 2650 3100 2    50   Input ~ 0
+Step-A2
+Text GLabel 2150 3100 0    50   Input ~ 0
+Map-External
+Text GLabel 2650 3600 2    50   Input ~ 0
+Crank-In
+Text GLabel 2650 3700 2    50   Input ~ 0
+Cam-In
+Text GLabel 2150 3700 0    50   Input ~ 0
+Tach
+Text GLabel 2150 3500 0    50   Input ~ 0
+Fan
+Text GLabel 2150 3600 0    50   Input ~ 0
+Fuel-Pump
+Text GLabel 4050 3750 0    50   Input ~ 0
+D43
+Text GLabel 4550 3650 2    50   Input ~ 0
+D39
+Text GLabel 2650 3500 2    50   Input ~ 0
+VR2-
+Text GLabel 2650 3400 2    50   Input ~ 0
+VR1-
+Text GLabel 2650 4000 2    50   Input ~ 0
+O2
+Text GLabel 2150 4000 0    50   Input ~ 0
+IAT
+Text GLabel 2150 3800 0    50   Input ~ 0
+Clutch
+Text GLabel 4050 3450 0    50   Input ~ 0
+A10
+Text GLabel 2150 3900 0    50   Input ~ 0
+CLT
+Text GLabel 2150 3400 0    50   Input ~ 0
+Flex
+$Comp
+L power:GND #PWR0168
+U 1 1 60EFA957
+P 2150 2900
+F 0 "#PWR0168" H 2150 2650 50  0001 C CNN
+F 1 "GND" V 2150 2700 50  0000 C CNN
+F 2 "" H 2150 2900 50  0001 C CNN
+F 3 "" H 2150 2900 50  0001 C CNN
+	1    2150 2900
+	0    1    1    0   
+$EndComp
+Text GLabel 4550 3450 2    50   Input ~ 0
+VSS
+$Comp
+L power:GND #PWR0129
+U 1 1 60D4C3E5
+P 6300 4100
+F 0 "#PWR0129" H 6300 3850 50  0001 C CNN
+F 1 "GND" V 6305 3972 50  0000 R CNN
+F 2 "" H 6300 4100 50  0001 C CNN
+F 3 "" H 6300 4100 50  0001 C CNN
+	1    6300 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 60D4CD04
+P 6300 3850
+F 0 "#PWR0130" H 6300 3600 50  0001 C CNN
+F 1 "GND" V 6300 3700 50  0000 R CNN
+F 2 "" H 6300 3850 50  0001 C CNN
+F 3 "" H 6300 3850 50  0001 C CNN
+	1    6300 3850
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0131
+U 1 1 60D4D41F
+P 6300 4300
+F 0 "#PWR0131" H 6300 4050 50  0001 C CNN
+F 1 "GND" V 6305 4172 50  0000 R CNN
+F 2 "" H 6300 4300 50  0001 C CNN
+F 3 "" H 6300 4300 50  0001 C CNN
+	1    6300 4300
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 60D4DA25
+P 6300 4200
+F 0 "#PWR0132" H 6300 3950 50  0001 C CNN
+F 1 "GND" V 6305 4072 50  0000 R CNN
+F 2 "" H 6300 4200 50  0001 C CNN
+F 3 "" H 6300 4200 50  0001 C CNN
+	1    6300 4200
+	0    1    1    0   
+$EndComp
+Text GLabel 2650 2300 2    50   Input ~ 0
+HC2
+Text GLabel 2650 2400 2    50   Input ~ 0
+IDLE
+Text GLabel 2150 2500 0    50   Input ~ 0
+INJ4
+Text GLabel 2650 2600 2    50   Input ~ 0
+BOOST
+Text GLabel 2650 2500 2    50   Input ~ 0
+HC1
+Text GLabel 7150 3650 0    50   Input ~ 0
+MC-D21
+Text Notes 6400 1650 0    98   ~ 0
+Proto Area
+$Comp
+L power:GND #PWR0133
+U 1 1 60F49610
+P 6300 3750
+F 0 "#PWR0133" H 6300 3500 50  0001 C CNN
+F 1 "GND" V 6300 3600 50  0000 R CNN
+F 2 "" H 6300 3750 50  0001 C CNN
+F 3 "" H 6300 3750 50  0001 C CNN
+	1    6300 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 60F49616
+P 6300 3650
+F 0 "#PWR0134" H 6300 3400 50  0001 C CNN
+F 1 "GND" V 6300 3500 50  0000 R CNN
+F 2 "" H 6300 3650 50  0001 C CNN
+F 3 "" H 6300 3650 50  0001 C CNN
+	1    6300 3650
+	0    1    -1   0   
+$EndComp
+Text Notes 1800 1800 0    98   ~ 0
+Main Connection
+$Comp
+L power:VDDA #PWR042
+U 1 1 614A87E1
+P 2150 3300
+F 0 "#PWR042" H 2150 3150 50  0001 C CNN
+F 1 "VDDA" V 2165 3428 50  0000 L CNN
+F 2 "" H 2150 3300 50  0001 C CNN
+F 3 "" H 2150 3300 50  0001 C CNN
+	1    2150 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDDA #PWR044
+U 1 1 614ACA98
+P 7150 4200
+F 0 "#PWR044" H 7150 4050 50  0001 C CNN
+F 1 "VDDA" V 7150 4350 50  0000 L CNN
+F 2 "" H 7150 4200 50  0001 C CNN
+F 3 "" H 7150 4200 50  0001 C CNN
+	1    7150 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x16_Counter_Clockwise J3
+U 1 1 61277161
+P 6250 2600
+F 0 "J3" H 6300 3450 50  0000 C CNN
+F 1 "Conn_02x16_Counter_Clockwise" H 6300 3426 50  0001 C CNN
+F 2 "Detonation:PROTO-3X32" H 6250 2600 50  0001 C CNN
+F 3 "~" H 6250 2600 50  0001 C CNN
+	1    6250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 6123DFE0
+P 7350 3750
+F 0 "J5" H 7430 3742 50  0000 L CNN
+F 1 "Conn_01x02" H 7430 3651 50  0001 L CNN
+F 2 "Misc:3x1-GPIO-NOBORDER" H 7350 3750 50  0001 C CNN
+F 3 "~" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x20_Counter_Clockwise J1
+U 1 1 6125AD87
+P 2350 3000
+F 0 "J1" H 2400 4117 50  0000 C CNN
+F 1 "Conn_02x20_Counter_Clockwise" H 2400 4026 50  0001 C CNN
+F 2 "Connector_Automotive:IDC-Header_2x20_P2.54mm_Vertical_Speeduino" H 2350 3000 50  0001 C CNN
+F 3 "~" H 2350 3000 50  0001 C CNN
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 2400 0    50   Input ~ 0
+INJ3
+Text GLabel 2150 2600 0    50   Input ~ 0
+INJ4
+$Comp
+L power:GND #PWR0135
+U 1 1 6126289E
+P 2150 3000
+F 0 "#PWR0135" H 2150 2750 50  0001 C CNN
+F 1 "GND" V 2150 2800 50  0000 C CNN
+F 2 "" H 2150 3000 50  0001 C CNN
+F 3 "" H 2150 3000 50  0001 C CNN
+	1    2150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 61263229
+P 2150 3200
+F 0 "#PWR0136" H 2150 2950 50  0001 C CNN
+F 1 "GND" V 2150 3000 50  0000 C CNN
+F 2 "" H 2150 3200 50  0001 C CNN
+F 3 "" H 2150 3200 50  0001 C CNN
+	1    2150 3200
+	0    1    1    0   
+$EndComp
+Text GLabel 2650 3900 2    50   Input ~ 0
+TPS
+Text GLabel 4050 3650 0    50   Input ~ 0
+A9
+Text GLabel 4050 3550 0    50   Input ~ 0
+D41
+Text GLabel 2650 3000 2    50   Input ~ 0
+Step-A1
+Text GLabel 2650 3200 2    50   Input ~ 0
+Step-B2
+$Comp
+L power:GND #PWR0137
+U 1 1 6126A489
+P 2650 3800
+F 0 "#PWR0137" H 2650 3550 50  0001 C CNN
+F 1 "GND" V 2650 3600 50  0000 C CNN
+F 2 "" H 2650 3800 50  0001 C CNN
+F 3 "" H 2650 3800 50  0001 C CNN
+	1    2650 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDDA #PWR0145
+U 1 1 6126B955
+P 2650 3300
+F 0 "#PWR0145" H 2650 3150 50  0001 C CNN
+F 1 "VDDA" V 2665 3428 50  0000 L CNN
+F 2 "" H 2650 3300 50  0001 C CNN
+F 3 "" H 2650 3300 50  0001 C CNN
+	1    2650 3300
+	0    1    1    0   
+$EndComp
+Text GLabel 2650 2100 2    50   Input ~ 0
+INJ1
+Text GLabel 2650 2200 2    50   Input ~ 0
+INJ2
+$Comp
+L Connector:Screw_Terminal_01x02 J8
+U 1 1 612F22E5
+P 4400 2550
+F 0 "J8" H 4480 2542 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 4480 2451 50  0001 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 4400 2550 50  0001 C CNN
+F 3 "~" H 4400 2550 50  0001 C CNN
+	1    4400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 612F3881
+P 4200 2650
+F 0 "#PWR0146" H 4200 2400 50  0001 C CNN
+F 1 "GND" V 4200 2450 50  0000 C CNN
+F 2 "" H 4200 2650 50  0001 C CNN
+F 3 "" H 4200 2650 50  0001 C CNN
+	1    4200 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J9
+U 1 1 614B6090
+P 4250 3550
+F 0 "J9" H 4300 3800 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 4300 3776 50  0001 C CNN
+F 2 "Detonation:IDC-8-AUX" H 4250 3550 50  0001 C CNN
+F 3 "~" H 4250 3550 50  0001 C CNN
+	1    4250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0171
+U 1 1 614B8B14
+P 4550 3750
+F 0 "#PWR0171" H 4550 3500 50  0001 C CNN
+F 1 "GND" V 4550 3550 50  0000 C CNN
+F 2 "" H 4550 3750 50  0001 C CNN
+F 3 "" H 4550 3750 50  0001 C CNN
+	1    4550 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0172
+U 1 1 614B911F
+P 4550 3550
+F 0 "#PWR0172" H 4550 3300 50  0001 C CNN
+F 1 "GND" V 4550 3350 50  0000 C CNN
+F 2 "" H 4550 3550 50  0001 C CNN
+F 3 "" H 4550 3550 50  0001 C CNN
+	1    4550 3550
+	0    -1   -1   0   
+$EndComp
+Text Notes 8950 2400 0    100  ~ 0
+Reset Control
+$Comp
+L power:VDD #PWR0109
+U 1 1 60EE8334
+P 9150 2650
+F 0 "#PWR0109" H 9150 2500 50  0001 C CNN
+F 1 "VDD" V 9165 2778 50  0000 L CNN
+F 2 "" H 9150 2650 50  0001 C CNN
+F 3 "" H 9150 2650 50  0001 C CNN
+	1    9150 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 6131FE60
+P 6500 3750
+F 0 "J6" H 6580 3742 50  0000 L CNN
+F 1 "Conn_01x02" H 6580 3651 50  0001 L CNN
+F 2 "Misc:3x1-GPIO-NOBORDER" H 6500 3750 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x16_Counter_Clockwise J7
+U 1 1 613202E4
+P 7150 2600
+F 0 "J7" H 7200 3450 50  0000 C CNN
+F 1 "Conn_02x16_Counter_Clockwise" H 7200 3426 50  0001 C CNN
+F 2 "Detonation:PROTO-3X32" H 7150 2600 50  0001 C CNN
+F 3 "~" H 7150 2600 50  0001 C CNN
+	1    7150 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7150 3750 0    50   Input ~ 0
+MC-D42
+Text GLabel 7150 3850 0    50   Input ~ 0
+MC-D44
+$Comp
+L Connector_Generic:Conn_01x03 J10
+U 1 1 6133257E
+P 7350 4200
+F 0 "J10" H 7430 4192 50  0000 L CNN
+F 1 "Conn_01x02" H 7430 4101 50  0001 L CNN
+F 2 "Misc:3x1-GPIO-NOBORDER" H 7350 4200 50  0001 C CNN
+F 3 "~" H 7350 4200 50  0001 C CNN
+	1    7350 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 7150 4100 0    50   Input ~ 0
+MC-D46
+$Comp
+L power:VDDA #PWR0173
+U 1 1 6133E401
+P 7150 4300
+F 0 "#PWR0173" H 7150 4150 50  0001 C CNN
+F 1 "VDDA" V 7150 4450 50  0000 L CNN
+F 2 "" H 7150 4300 50  0001 C CNN
+F 3 "" H 7150 4300 50  0001 C CNN
+	1    7150 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J11
+U 1 1 6133F08F
+P 6500 4200
+F 0 "J11" H 6580 4192 50  0000 L CNN
+F 1 "Conn_01x02" H 6580 4101 50  0001 L CNN
+F 2 "Misc:3x1-GPIO-NOBORDER" H 6500 4200 50  0001 C CNN
+F 3 "~" H 6500 4200 50  0001 C CNN
+	1    6500 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 4100 2400 0    50   ~ 0
+Power Input
+Text Notes 4100 3200 0    50   ~ 0
+Aux In/Out
+Wire Wire Line
+	9950 2800 9750 2800
+Connection ~ 9750 2800
+Wire Wire Line
+	9750 2650 9750 2800
+Wire Wire Line
+	9600 2650 9750 2650
+Wire Wire Line
+	9600 2800 9750 2800
+Connection ~ 9300 2650
+Wire Wire Line
+	9300 2800 9300 2650
+Wire Wire Line
+	9150 2650 9300 2650
+$Comp
+L Diode:1N4148WS D?
+U 1 1 612FD50E
+P 9450 2650
+AR Path="/60E7AA2A/612FD50E" Ref="D?"  Part="1" 
+AR Path="/60BDAE25/612FD50E" Ref="D8"  Part="1" 
+F 0 "D8" H 9400 2750 50  0000 L CNN
+F 1 "1N4148WS" H 9550 2750 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323F" H 9450 2650 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9450 2650 50  0001 C CNN
+F 4 "" H 9450 2650 50  0001 C CNN "JLC"
+F 5 "C2128" H 9450 2650 50  0001 C CNN "LCSC"
+	1    9450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 60EE8E34
+P 9750 3100
+F 0 "#PWR0110" H 9750 2850 50  0001 C CNN
+F 1 "GND" V 9755 2972 50  0000 R CNN
+F 2 "" H 9750 3100 50  0001 C CNN
+F 3 "" H 9750 3100 50  0001 C CNN
+	1    9750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 60EE6A4D
+P 9750 2950
+F 0 "C9" H 9800 3050 50  0000 L CNN
+F 1 "4.7nF" H 9500 3050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9788 2800 50  0001 C CNN
+F 3 "~" H 9750 2950 50  0001 C CNN
+F 4 "C53987" H 9750 2950 50  0001 C CNN "LCSC"
+	1    9750 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R57
+U 1 1 60C7E720
+P 9450 2800
+F 0 "R57" V 9450 2750 50  0000 L CNN
+F 1 "10k" V 9350 2750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9380 2800 50  0001 C CNN
+F 3 "~" H 9450 2800 50  0001 C CNN
+F 4 "" H 9450 2800 50  0001 C CNN "JLC"
+F 5 "C25804" H 9450 2800 50  0001 C CNN "LCSC"
+	1    9450 2800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9950 2800 2    50   Input ~ 0
+MC-RESET
+$EndSCHEMATC
