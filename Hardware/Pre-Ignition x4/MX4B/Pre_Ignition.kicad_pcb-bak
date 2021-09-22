@@ -6,7 +6,7 @@
     (tracks 1087)
     (zones 0)
     (modules 141)
-    (nets 118)
+    (nets 117)
   )
 
   (page A4)
@@ -209,7 +209,6 @@
   (net 114 MC-A14)
   (net 115 "Net-(JP2-Pad1)")
   (net 116 "Net-(JP3-Pad3)")
-  (net 117 "Net-(U7-Pad3)")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -450,7 +449,6 @@
     (add_net "Net-(U2-Pad1)")
     (add_net "Net-(U2-Pad8)")
     (add_net "Net-(U7-Pad14)")
-    (add_net "Net-(U7-Pad3)")
     (add_net "Net-(XA1-PadVIN)")
     (add_net O2)
     (add_net Step-A1)
@@ -9437,7 +9435,7 @@
   (segment (start 179.07 69.596) (end 178.308 68.834) (width 0.25) (layer Front) (net 115))
   (segment (start 178.3115 60.198) (end 179.0735 60.96) (width 0.25) (layer Front) (net 116))
   (segment (start 172.402 60.198) (end 178.3115 60.198) (width 0.25) (layer Front) (net 116))
-  (segment (start 170.434 142.175) (end 170.561 142.302) (width 0.25) (layer Front) (net 117) (status 30))
+  (segment (start 170.434 142.175) (end 170.561 142.302) (width 0.25) (layer Front) (net 0) (status 30))
 
   (zone (net 3) (net_name GND) (layer Back) (tstamp 613982F3) (hatch edge 0.508)
     (connect_pads thru_hole_only (clearance 0.508))
