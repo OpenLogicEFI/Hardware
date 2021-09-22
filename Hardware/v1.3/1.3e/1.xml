@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>D:\Cloud\DetonationEMS\Work\Hardware\ECU's\DetonationEMS 1.3e\1.3.sch</source>
-    <date>9/8/2021 5:00:32 PM</date>
+    <source>D:\Cloud\DetonationEMS\Work\Hardware\ECU's\DetonationEMS 1.3\1.3e\1.3.sch</source>
+    <date>9/21/2021 8:35:05 PM</date>
     <tool>Eeschema (5.1.10)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -547,22 +547,22 @@
       <tstamp>60C277EA</tstamp>
     </comp>
     <comp ref="IGN4">
-      <value>LED Red</value>
+      <value>LED Blue</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C2286</field>
+        <field name="LCSC">C72041</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Fuel-Ignition/" tstamps="/60BDFF19/"/>
       <tstamp>60C2F4C4</tstamp>
     </comp>
     <comp ref="IGN3">
-      <value>LED Red</value>
+      <value>LED Blue</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C2286</field>
+        <field name="LCSC">C72041</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Fuel-Ignition/" tstamps="/60BDFF19/"/>
@@ -602,22 +602,22 @@
       <tstamp>60C3A823</tstamp>
     </comp>
     <comp ref="IGN2">
-      <value>LED Red</value>
+      <value>LED Blue</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C2286</field>
+        <field name="LCSC">C72041</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Fuel-Ignition/" tstamps="/60BDFF19/"/>
       <tstamp>60C3A833</tstamp>
     </comp>
     <comp ref="IGN1">
-      <value>LED Red</value>
+      <value>LED Blue</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C2286</field>
+        <field name="LCSC">C72041</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Fuel-Ignition/" tstamps="/60BDFF19/"/>
@@ -751,11 +751,11 @@
       <tstamp>612D48D7</tstamp>
     </comp>
     <comp ref="D9">
-      <value>LED Green</value>
+      <value>LED Blue</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C72043</field>
+        <field name="LCSC">C72041</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Fuel-Ignition/" tstamps="/60BDFF19/"/>
@@ -784,11 +784,11 @@
       <tstamp>612F8323</tstamp>
     </comp>
     <comp ref="D13">
-      <value>LED Green</value>
+      <value>LED Blue</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C72043</field>
+        <field name="LCSC">C72041</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Fuel-Ignition/" tstamps="/60BDFF19/"/>
@@ -817,11 +817,11 @@
       <tstamp>6130920F</tstamp>
     </comp>
     <comp ref="D14">
-      <value>LED Green</value>
+      <value>LED Blue</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C72043</field>
+        <field name="LCSC">C72041</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Fuel-Ignition/" tstamps="/60BDFF19/"/>
@@ -850,11 +850,11 @@
       <tstamp>6130DED7</tstamp>
     </comp>
     <comp ref="D10">
-      <value>LED Green</value>
+      <value>LED Blue</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C72043</field>
+        <field name="LCSC">C72041</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Fuel-Ignition/" tstamps="/60BDFF19/"/>
@@ -2486,46 +2486,44 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="+3V3">
-      <node ref="XA1" pin="3V3"/>
-    </net>
-    <net code="2" name="GND">
+    <net code="1" name="GND">
       <node ref="C28" pin="2"/>
       <node ref="C31" pin="2"/>
       <node ref="C26" pin="2"/>
       <node ref="C14" pin="2"/>
+      <node ref="R28" pin="1"/>
       <node ref="C10" pin="2"/>
       <node ref="J1" pin="10"/>
       <node ref="C24" pin="2"/>
+      <node ref="J1" pin="12"/>
       <node ref="C15" pin="2"/>
-      <node ref="R28" pin="1"/>
       <node ref="R64" pin="1"/>
       <node ref="C12" pin="1"/>
       <node ref="Q8" pin="3"/>
-      <node ref="J1" pin="12"/>
       <node ref="Q2" pin="2"/>
       <node ref="C18" pin="2"/>
       <node ref="C20" pin="2"/>
       <node ref="Q1" pin="2"/>
       <node ref="R53" pin="1"/>
       <node ref="J1" pin="23"/>
+      <node ref="C21" pin="2"/>
+      <node ref="J6" pin="3"/>
       <node ref="C23" pin="2"/>
       <node ref="J1" pin="9"/>
       <node ref="C19" pin="2"/>
-      <node ref="C21" pin="2"/>
-      <node ref="J6" pin="3"/>
+      <node ref="J6" pin="2"/>
       <node ref="C11" pin="1"/>
       <node ref="C13" pin="1"/>
-      <node ref="J6" pin="2"/>
       <node ref="J6" pin="1"/>
       <node ref="J8" pin="2"/>
       <node ref="J9" pin="5"/>
       <node ref="J9" pin="7"/>
       <node ref="XA1" pin="GND5"/>
+      <node ref="XA1" pin="GND1"/>
+      <node ref="C17" pin="1"/>
       <node ref="C16" pin="1"/>
       <node ref="C29" pin="2"/>
       <node ref="C27" pin="2"/>
-      <node ref="C17" pin="1"/>
       <node ref="C9" pin="1"/>
       <node ref="J11" pin="3"/>
       <node ref="J11" pin="2"/>
@@ -2559,106 +2557,108 @@
       <node ref="IGN2" pin="1"/>
       <node ref="Q5" pin="3"/>
       <node ref="Q7" pin="3"/>
-      <node ref="C22" pin="2"/>
       <node ref="C5" pin="2"/>
       <node ref="J2" pin="2"/>
       <node ref="R17" pin="1"/>
       <node ref="C6" pin="2"/>
+      <node ref="C22" pin="2"/>
       <node ref="Q6" pin="3"/>
       <node ref="R21" pin="1"/>
       <node ref="R22" pin="1"/>
       <node ref="U4" pin="2"/>
       <node ref="Q4" pin="2"/>
-      <node ref="Q3" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C25" pin="2"/>
       <node ref="C3" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="D7" pin="1"/>
-      <node ref="RV1" pin="2"/>
-      <node ref="XA1" pin="GND1"/>
-      <node ref="C2" pin="2"/>
-      <node ref="XA1" pin="GND2"/>
       <node ref="IC1" pin="2"/>
-      <node ref="XA1" pin="GND3"/>
-      <node ref="XA1" pin="GND6"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="XA1" pin="GND2"/>
       <node ref="D6" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="RV1" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="XA1" pin="GND6"/>
+      <node ref="XA1" pin="GND3"/>
+      <node ref="D7" pin="1"/>
+      <node ref="C1" pin="2"/>
     </net>
-    <net code="3" name="VDD">
-      <node ref="R60" pin="2"/>
-      <node ref="XA1" pin="5V1"/>
-      <node ref="XA1" pin="5V4"/>
-      <node ref="C4" pin="1"/>
-      <node ref="XA1" pin="5V3"/>
-      <node ref="R56" pin="2"/>
-      <node ref="J4" pin="5"/>
-      <node ref="R41" pin="2"/>
-      <node ref="IC1" pin="3"/>
-      <node ref="R62" pin="1"/>
-      <node ref="R61" pin="1"/>
-      <node ref="J1" pin="13"/>
-      <node ref="R34" pin="1"/>
-      <node ref="R30" pin="2"/>
-      <node ref="R31" pin="2"/>
-      <node ref="J1" pin="28"/>
-      <node ref="R37" pin="2"/>
-      <node ref="R26" pin="1"/>
-      <node ref="R36" pin="1"/>
-      <node ref="D8" pin="1"/>
-      <node ref="J10" pin="2"/>
-      <node ref="J10" pin="3"/>
-      <node ref="U6" pin="5"/>
-      <node ref="U3" pin="5"/>
-      <node ref="R57" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="U4" pin="5"/>
-      <node ref="A1" pin="14"/>
-      <node ref="A1" pin="13"/>
-      <node ref="C11" pin="2"/>
-      <node ref="C13" pin="2"/>
-      <node ref="U5" pin="5"/>
-      <node ref="Map1" pin="2"/>
-      <node ref="J2" pin="1"/>
-      <node ref="JP1" pin="3"/>
+    <net code="2" name="+3V3">
+      <node ref="XA1" pin="3V3"/>
     </net>
-    <net code="4" name="+BATT">
+    <net code="3" name="+BATT">
       <node ref="U7" pin="9"/>
-      <node ref="R29" pin="2"/>
-      <node ref="D4" pin="1"/>
-      <node ref="R46" pin="2"/>
-      <node ref="D5" pin="1"/>
-      <node ref="A1" pin="8"/>
       <node ref="RV1" pin="1"/>
-      <node ref="J8" pin="1"/>
-      <node ref="D3" pin="1"/>
-      <node ref="D2" pin="1"/>
       <node ref="D1" pin="2"/>
+      <node ref="A1" pin="8"/>
+      <node ref="R35" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="R46" pin="2"/>
+      <node ref="D4" pin="1"/>
+      <node ref="R29" pin="2"/>
       <node ref="JP1" pin="1"/>
     </net>
-    <net code="5" name="Net-(D6-Pad2)">
+    <net code="4" name="Net-(D6-Pad2)">
       <node ref="R35" pin="1"/>
       <node ref="D6" pin="2"/>
     </net>
-    <net code="6" name="Net-(D7-Pad2)">
-      <node ref="R60" pin="1"/>
-      <node ref="D7" pin="2"/>
+    <net code="5" name="VDD">
+      <node ref="IC1" pin="3"/>
+      <node ref="R31" pin="2"/>
+      <node ref="R36" pin="1"/>
+      <node ref="J1" pin="13"/>
+      <node ref="R30" pin="2"/>
+      <node ref="R41" pin="2"/>
+      <node ref="R37" pin="2"/>
+      <node ref="J4" pin="5"/>
+      <node ref="C4" pin="1"/>
+      <node ref="R34" pin="1"/>
+      <node ref="R60" pin="2"/>
+      <node ref="JP1" pin="3"/>
+      <node ref="J2" pin="1"/>
+      <node ref="R61" pin="1"/>
+      <node ref="R62" pin="1"/>
+      <node ref="J1" pin="28"/>
+      <node ref="Map1" pin="2"/>
+      <node ref="R26" pin="1"/>
+      <node ref="A1" pin="13"/>
+      <node ref="U4" pin="5"/>
+      <node ref="J10" pin="3"/>
+      <node ref="C11" pin="2"/>
+      <node ref="XA1" pin="5V4"/>
+      <node ref="C13" pin="2"/>
+      <node ref="A1" pin="14"/>
+      <node ref="J10" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="XA1" pin="5V1"/>
+      <node ref="D8" pin="1"/>
+      <node ref="U6" pin="5"/>
+      <node ref="U5" pin="5"/>
+      <node ref="R56" pin="2"/>
+      <node ref="XA1" pin="5V3"/>
+      <node ref="U3" pin="5"/>
+      <node ref="R57" pin="1"/>
     </net>
-    <net code="7" name="Net-(XA1-PadVIN)">
-      <node ref="XA1" pin="VIN"/>
-    </net>
-    <net code="8" name="Net-(C1-Pad1)">
-      <node ref="R35" pin="2"/>
+    <net code="6" name="Net-(C1-Pad1)">
       <node ref="C1" pin="1"/>
       <node ref="D1" pin="1"/>
       <node ref="IC1" pin="1"/>
       <node ref="C2" pin="1"/>
     </net>
+    <net code="7" name="Net-(XA1-PadVIN)">
+      <node ref="XA1" pin="VIN"/>
+    </net>
+    <net code="8" name="Net-(D7-Pad2)">
+      <node ref="D7" pin="2"/>
+      <node ref="R60" pin="1"/>
+    </net>
     <net code="9" name="MC-D14">
       <node ref="XA1" pin="D14"/>
     </net>
     <net code="10" name="MC-D21">
-      <node ref="J5" pin="1"/>
       <node ref="XA1" pin="D21"/>
+      <node ref="J5" pin="1"/>
     </net>
     <net code="11" name="MC-D17">
       <node ref="XA1" pin="D17"/>
@@ -2681,9 +2681,9 @@
       <node ref="XA1" pin="D12"/>
     </net>
     <net code="17" name="MC-D11">
-      <node ref="R23" pin="2"/>
-      <node ref="R22" pin="2"/>
       <node ref="XA1" pin="D11"/>
+      <node ref="R22" pin="2"/>
+      <node ref="R23" pin="2"/>
     </net>
     <net code="18" name="MC-D10">
       <node ref="R24" pin="2"/>
@@ -2744,8 +2744,8 @@
       <node ref="XA1" pin="D25"/>
     </net>
     <net code="36" name="MC-D24">
-      <node ref="A1" pin="9"/>
       <node ref="XA1" pin="D24"/>
+      <node ref="A1" pin="9"/>
     </net>
     <net code="37" name="MC-D23">
       <node ref="XA1" pin="D23"/>
@@ -2776,17 +2776,17 @@
       <node ref="XA1" pin="A5"/>
     </net>
     <net code="46" name="MC-D38">
-      <node ref="R3" pin="2"/>
-      <node ref="R1" pin="1"/>
       <node ref="XA1" pin="D38"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R3" pin="2"/>
     </net>
     <net code="47" name="MC-D39">
-      <node ref="XA1" pin="D39"/>
       <node ref="U7" pin="1"/>
+      <node ref="XA1" pin="D39"/>
     </net>
     <net code="48" name="MC-D45">
-      <node ref="U7" pin="5"/>
       <node ref="XA1" pin="D45"/>
+      <node ref="U7" pin="5"/>
     </net>
     <net code="49" name="MC-D52">
       <node ref="XA1" pin="D52"/>
@@ -2794,18 +2794,18 @@
       <node ref="R10" pin="2"/>
     </net>
     <net code="50" name="MC-D51">
-      <node ref="R40" pin="1"/>
       <node ref="XA1" pin="D51"/>
+      <node ref="R40" pin="1"/>
     </net>
     <net code="51" name="MC-D50">
+      <node ref="XA1" pin="D50"/>
       <node ref="R9" pin="1"/>
       <node ref="R11" pin="2"/>
-      <node ref="XA1" pin="D50"/>
     </net>
     <net code="52" name="MC-D5">
-      <node ref="XA1" pin="D5"/>
       <node ref="R47" pin="2"/>
       <node ref="R50" pin="2"/>
+      <node ref="XA1" pin="D5"/>
     </net>
     <net code="53" name="MC-D49">
       <node ref="U7" pin="7"/>
@@ -2815,12 +2815,12 @@
       <node ref="XA1" pin="D48"/>
     </net>
     <net code="55" name="MC-D47">
-      <node ref="U7" pin="4"/>
       <node ref="XA1" pin="D47"/>
+      <node ref="U7" pin="4"/>
     </net>
     <net code="56" name="MC-D46">
-      <node ref="J10" pin="1"/>
       <node ref="XA1" pin="D46"/>
+      <node ref="J10" pin="1"/>
     </net>
     <net code="57" name="MC-D44">
       <node ref="XA1" pin="D44"/>
@@ -2835,23 +2835,23 @@
       <node ref="J5" pin="2"/>
     </net>
     <net code="60" name="MC-D41">
-      <node ref="U7" pin="2"/>
       <node ref="XA1" pin="D41"/>
+      <node ref="U7" pin="2"/>
     </net>
     <net code="61" name="MC-D40">
+      <node ref="R2" pin="2"/>
       <node ref="R4" pin="2"/>
       <node ref="XA1" pin="D40"/>
-      <node ref="R2" pin="2"/>
     </net>
     <net code="62" name="MC-D4">
-      <node ref="R49" pin="2"/>
       <node ref="XA1" pin="D4"/>
+      <node ref="R49" pin="2"/>
       <node ref="R48" pin="2"/>
     </net>
     <net code="63" name="MC-D6">
-      <node ref="R51" pin="2"/>
-      <node ref="XA1" pin="D6"/>
       <node ref="R52" pin="2"/>
+      <node ref="XA1" pin="D6"/>
+      <node ref="R51" pin="2"/>
     </net>
     <net code="64" name="MC-D53">
       <node ref="XA1" pin="D53"/>
@@ -2863,45 +2863,45 @@
       <node ref="XA1" pin="SCL"/>
     </net>
     <net code="67" name="MC-RESET">
-      <node ref="XA1" pin="RST1"/>
+      <node ref="D8" pin="2"/>
       <node ref="C9" pin="2"/>
       <node ref="R57" pin="2"/>
-      <node ref="D8" pin="2"/>
+      <node ref="XA1" pin="RST1"/>
     </net>
     <net code="68" name="MC-IOREF">
       <node ref="XA1" pin="IORF"/>
     </net>
     <net code="69" name="MC-D9">
-      <node ref="R19" pin="2"/>
       <node ref="XA1" pin="D9"/>
       <node ref="R17" pin="2"/>
+      <node ref="R19" pin="2"/>
     </net>
     <net code="70" name="MC-D8">
-      <node ref="R18" pin="2"/>
       <node ref="XA1" pin="D8"/>
       <node ref="R20" pin="2"/>
+      <node ref="R18" pin="2"/>
     </net>
     <net code="71" name="MC-D7">
+      <node ref="R53" pin="2"/>
       <node ref="XA1" pin="D7"/>
       <node ref="R54" pin="2"/>
-      <node ref="R53" pin="2"/>
     </net>
     <net code="72" name="D39">
       <node ref="U7" pin="16"/>
       <node ref="J9" pin="6"/>
     </net>
     <net code="73" name="D43">
-      <node ref="U7" pin="14"/>
       <node ref="J9" pin="4"/>
+      <node ref="U7" pin="14"/>
     </net>
     <net code="74" name="A9">
-      <node ref="R43" pin="2"/>
-      <node ref="C23" pin="1"/>
       <node ref="J9" pin="3"/>
+      <node ref="C23" pin="1"/>
+      <node ref="R43" pin="2"/>
     </net>
     <net code="75" name="D41">
-      <node ref="U7" pin="15"/>
       <node ref="J9" pin="2"/>
+      <node ref="U7" pin="15"/>
     </net>
     <net code="76" name="A10">
       <node ref="C27" pin="1"/>
