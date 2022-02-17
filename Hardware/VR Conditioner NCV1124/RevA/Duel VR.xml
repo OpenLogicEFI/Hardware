@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>D:\Cloud\DetonationEMS\Work\Hardware\Modules\VRConditioner-NCV1124-Version1\Duel VR.sch</source>
-    <date>9/23/2021 10:00:56 PM</date>
+    <source>D:\Cloud\DetonationEMS\Work\Hardware\Products\VRConditioner-NCV1124\Duel VR.sch</source>
+    <date>10/3/2021 6:06:58 PM</date>
     <tool>Eeschema (5.1.10)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
+        <title>Duel VRConditioner </title>
+        <company>DetonationEMS</company>
+        <rev>B</rev>
+        <date>2021-10-02</date>
         <source>Duel VR.sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
+        <comment number="1" value="detonationems.com"/>
+        <comment number="2" value="github.com/DetonationEMS"/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
       </title_block>
@@ -38,44 +38,44 @@
       <tstamp>6126ED91</tstamp>
     </comp>
     <comp ref="R2">
-      <value>22k</value>
+      <value>16k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C17560</field>
+        <field name="LCSC">C17490</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61270210</tstamp>
     </comp>
     <comp ref="R1">
-      <value>22k</value>
+      <value>16k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C17560</field>
+        <field name="LCSC">C17490</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>612714D2</tstamp>
     </comp>
     <comp ref="R3">
-      <value>22k</value>
+      <value>16k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C17560</field>
+        <field name="LCSC">C17490</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61271D54</tstamp>
     </comp>
     <comp ref="R4">
-      <value>22k</value>
+      <value>16k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C17560</field>
+        <field name="LCSC">C17490</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -104,11 +104,11 @@
       <tstamp>61277624</tstamp>
     </comp>
     <comp ref="R5">
-      <value>24k</value>
+      <value>18k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C23352</field>
+        <field name="LCSC">C25810</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -174,6 +174,22 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61371869</tstamp>
     </comp>
+    <comp ref="JP1">
+      <value>SolderJumper_2_Bridged</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6158CAC2</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>SolderJumper_2_Bridged</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Bridged" description="Solder Jumper, 2-pole, closed/bridged"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6158DA3A</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="Connector_Generic" part="Conn_02x04_Counter_Clockwise">
@@ -235,6 +251,21 @@
         <field name="Value">Logo_Open_Hardware_Small</field>
       </fields>
     </libpart>
+    <libpart lib="Jumper" part="SolderJumper_2_Bridged">
+      <description>Solder Jumper, 2-pole, closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Bridged</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="ncv1124" part="NCV1124">
       <fields>
         <field name="Reference">D</field>
@@ -264,70 +295,81 @@
     <library logical="Graphic">
       <uri>C:\Program Files\KiCad\share\kicad\library/Graphic.lib</uri>
     </library>
+    <library logical="Jumper">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Jumper.lib</uri>
+    </library>
     <library logical="ncv1124">
       <uri>D:/Cloud/DetonationEMS/Work/Hardware/KiCad Tools/Libs/ncv1124.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="C2" pin="2"/>
-      <node ref="R8" pin="2"/>
-      <node ref="R7" pin="2"/>
-      <node ref="IC1" pin="5"/>
-      <node ref="IC1" pin="4"/>
-      <node ref="C1" pin="1"/>
-      <node ref="J1" pin="6"/>
-      <node ref="R5" pin="1"/>
-      <node ref="C4" pin="2"/>
-    </net>
-    <net code="2" name="VR2OUT">
-      <node ref="IC1" pin="6"/>
-      <node ref="J1" pin="7"/>
-    </net>
-    <net code="3" name="VR1OUT">
-      <node ref="IC1" pin="7"/>
-      <node ref="J1" pin="8"/>
-    </net>
-    <net code="4" name="VDD">
+    <net code="1" name="VDD">
+      <node ref="C3" pin="2"/>
       <node ref="IC1" pin="8"/>
       <node ref="C4" pin="1"/>
       <node ref="J1" pin="5"/>
-      <node ref="C3" pin="2"/>
     </net>
-    <net code="5" name="Net-(C3-Pad1)">
+    <net code="2" name="GND">
+      <node ref="R7" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="IC1" pin="5"/>
+      <node ref="IC1" pin="4"/>
+      <node ref="J1" pin="6"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="3" name="Net-(C3-Pad1)">
+      <node ref="IC1" pin="1"/>
       <node ref="C3" pin="1"/>
       <node ref="R5" pin="2"/>
-      <node ref="IC1" pin="1"/>
     </net>
-    <net code="6" name="VR1-">
-      <node ref="J1" pin="1"/>
+    <net code="4" name="VR2OUT">
+      <node ref="J1" pin="7"/>
+      <node ref="JP2" pin="2"/>
+    </net>
+    <net code="5" name="Net-(IC1-Pad6)">
+      <node ref="JP2" pin="1"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="6" name="VR1OUT">
+      <node ref="JP1" pin="2"/>
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="7" name="Net-(IC1-Pad7)">
+      <node ref="IC1" pin="7"/>
+      <node ref="JP1" pin="1"/>
+    </net>
+    <net code="8" name="VR1-">
       <node ref="R8" pin="1"/>
+      <node ref="J1" pin="1"/>
     </net>
-    <net code="7" name="VR2-">
-      <node ref="J1" pin="4"/>
+    <net code="9" name="VR2-">
       <node ref="R7" pin="1"/>
+      <node ref="J1" pin="4"/>
     </net>
-    <net code="8" name="Net-(C2-Pad1)">
-      <node ref="R3" pin="1"/>
+    <net code="10" name="Net-(C2-Pad1)">
       <node ref="IC1" pin="3"/>
       <node ref="R4" pin="1"/>
+      <node ref="R3" pin="1"/>
       <node ref="C2" pin="1"/>
     </net>
-    <net code="9" name="Net-(C1-Pad2)">
+    <net code="11" name="Net-(C1-Pad2)">
       <node ref="C1" pin="2"/>
       <node ref="R1" pin="1"/>
       <node ref="R2" pin="1"/>
       <node ref="IC1" pin="2"/>
     </net>
-    <net code="10" name="VR1+">
-      <node ref="J1" pin="2"/>
-      <node ref="R2" pin="2"/>
-      <node ref="R1" pin="2"/>
-    </net>
-    <net code="11" name="VR2+">
+    <net code="12" name="VR2+">
       <node ref="R4" pin="2"/>
       <node ref="R3" pin="2"/>
       <node ref="J1" pin="3"/>
+    </net>
+    <net code="13" name="VR1+">
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="J1" pin="2"/>
     </net>
   </nets>
 </export>
