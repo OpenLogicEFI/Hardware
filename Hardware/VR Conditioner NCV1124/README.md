@@ -1,4 +1,4 @@
-# VR Conditioner !BETA!
+# VR Conditioner
 Based on the NCV1124 Chip
 
 Pin Setup:
