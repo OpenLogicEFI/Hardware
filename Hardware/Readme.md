@@ -1,4 +1,4 @@
-DetonationEMS - (Aaron S.) (aaron@detonationems.com) (detonationems.com)
+DetonationEMS - (Aaron S.) (aaron@detonationems.com)
 
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fwww.detonationems.com%2F)
 
