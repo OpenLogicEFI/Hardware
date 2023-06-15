@@ -1,0 +1,14 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid a7d5d0a7-2017-474b-8645-69a56d4781a3)
+
+  (paper "A4")
+
+  (title_block
+    (rev "1")
+  )
+
+  (lib_symbols
+  )
+
+)

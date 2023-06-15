@@ -6,8 +6,8 @@
 
   (title_block
     (title "Pre-Ignition X4")
-    (date "2023-05-11")
-    (rev "C2")
+    (date "2023-06-15")
+    (rev "C")
     (company "DetonationEMS")
     (comment 1 "detonationems.com")
   )
@@ -16,18 +16,14 @@
   )
 
 
-  (text "Pre-Ignition x4 is a 4 channel, (4 indavidually controlled ignition and injector outputs)\nUniversal Standalone Engine Managment System."
-    (at 57.15 69.85 0)
+  (text "Spark Gap x4 is a 4 channel, (4 indavidually controlled ignition and injector outputs)\nuniversal standalone engine managment system. \n\nBoard Selection in tuner studio for this ECU is \"Speeduino v0.4\""
+    (at 57.15 77.47 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 000377f2-e261-4ad7-bd12-d63122282b82)
   )
   (text "© 2023 DetonationEMS (Aaron S.)" (at 88.9 57.15 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 061b0d13-c1fa-4dc3-9bbf-2c4234a9b559)
-  )
-  (text "Rev C2" (at 99.06 39.37 0)
-    (effects (font (size 2.54 2.54)) (justify left bottom))
-    (uuid 2edc3810-c6b9-4fc7-9f83-06e9a2c5008c)
   )
   (text "Pre-Ignition x4" (at 87.63 50.8 0)
     (effects (font (size 9 9) (thickness 1.8) bold) (justify left bottom))

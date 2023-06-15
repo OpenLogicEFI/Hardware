@@ -1,0 +1,23 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 78efebc4-f035-4974-96d2-751a45fa3ac9)
+
+  (paper "A4")
+
+  (title_block
+    (title "Pre-Ignition X2")
+    (date "2023-06-15")
+    (rev "B")
+    (company "DetonationEMS")
+  )
+
+  (lib_symbols
+  )
+
+
+  (text "UNUSED SHEET USED AS \"NOTEPAD\"\nREMOVE BEFORE UPLOAD"
+    (at 177.8 179.07 0)
+    (effects (font (size 3.5 3.5) (thickness 0.7) bold) (justify left bottom))
+    (uuid e202d186-ffda-485d-a06a-6f7109165a6e)
+  )
+)

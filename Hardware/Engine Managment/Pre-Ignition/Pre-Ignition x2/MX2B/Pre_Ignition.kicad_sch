@@ -1,0 +1,154 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid fe159171-2aa9-4fbb-9e3c-a3bc14fca76b)
+
+  (paper "USLetter")
+
+  (title_block
+    (title "Pre-Ignition X2")
+    (date "2023-06-15")
+    (rev "B")
+    (company "DetonationEMS")
+  )
+
+  (lib_symbols
+  )
+
+
+  (text "Pre-Ignition x2" (at 88.9 53.34 0)
+    (effects (font (size 9 9) (thickness 1.8) bold) (justify left bottom))
+    (uuid 31323e28-4a8f-460c-b033-c14a2cb48f6a)
+  )
+  (text "Spark Gap x2 is a 2 channel, (2 indavidually controlled ignition and injector outputs)\nuniversal standalone engine managment system. \n\nBoard Selection in tuner studio for this ECU is \"Speeduino v0.4\""
+    (at 58.42 86.36 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid 6528cf26-47ff-4fb4-b37b-759ba7732288)
+  )
+  (text "© 2023 DetonationEMS (Aaron S.)" (at 90.17 59.69 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid fd1be258-1968-48f0-a246-ae0bd6ab9bde)
+  )
+
+  (sheet (at 115.57 99.06) (size 21.59 19.05) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000060bdff19)
+    (property "Sheetname" "Fuel-Ignition" (at 115.57 97.9834 0)
+      (effects (font (size 2 2)) (justify left bottom))
+    )
+    (property "Sheetfile" "Fuel-Ignition.kicad_sch" (at 115.57 118.6946 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (instances
+      (project "Pre_Ignition"
+        (path "/fe159171-2aa9-4fbb-9e3c-a3bc14fca76b" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 173.99 99.06) (size 21.59 19.05) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000060bec240)
+    (property "Sheetname" "Analog Inputs" (at 173.99 97.9834 0)
+      (effects (font (size 2 2)) (justify left bottom))
+    )
+    (property "Sheetfile" "Analog.kicad_sch" (at 173.99 118.6946 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (instances
+      (project "Pre_Ignition"
+        (path "/fe159171-2aa9-4fbb-9e3c-a3bc14fca76b" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 144.78 99.06) (size 21.59 19.05) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000060e7aa2a)
+    (property "Sheetname" "Output" (at 144.78 97.9834 0)
+      (effects (font (size 2 2)) (justify left bottom))
+    )
+    (property "Sheetfile" "Output.kicad_sch" (at 144.78 118.6946 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (instances
+      (project "Pre_Ignition"
+        (path "/fe159171-2aa9-4fbb-9e3c-a3bc14fca76b" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 57.15 99.06) (size 21.59 19.05) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 097fd3f2-fffe-4bf1-9cf5-5f5617b8d6a4)
+    (property "Sheetname" "MCU" (at 57.15 97.9834 0)
+      (effects (font (size 2 2)) (justify left bottom))
+    )
+    (property "Sheetfile" "mcu.kicad_sch" (at 57.15 118.6946 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (instances
+      (project "Pre_Ignition"
+        (path "/fe159171-2aa9-4fbb-9e3c-a3bc14fca76b" (page "1"))
+      )
+    )
+  )
+
+  (sheet (at 203.2 99.06) (size 21.59 19.05) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 0c9f6c61-bb1d-4783-9993-362f1a9a5391)
+    (property "Sheetname" "Digital-Inputs" (at 203.2 97.9834 0)
+      (effects (font (size 2 2)) (justify left bottom))
+    )
+    (property "Sheetfile" "digital.kicad_sch" (at 203.2 118.6946 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (instances
+      (project "Pre_Ignition"
+        (path "/fe159171-2aa9-4fbb-9e3c-a3bc14fca76b" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 246.38 152.4) (size 17.78 16.51) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 967f0c27-cdcc-4d33-bcee-1b39f2940c83)
+    (property "Sheetname" "holdSheet" (at 246.38 151.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "holdSheet.kicad_sch" (at 246.38 169.4946 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (instances
+      (project "Pre_Ignition"
+        (path "/fe159171-2aa9-4fbb-9e3c-a3bc14fca76b" (page "99"))
+      )
+    )
+  )
+
+  (sheet (at 86.36 99.06) (size 21.59 19.05)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid d1b66e8d-7450-4fc4-a10e-cfa6878b9226)
+    (property "Sheetname" "Connector-Power" (at 83.82 97.79 0)
+      (effects (font (size 2 2)) (justify left bottom))
+    )
+    (property "Sheetfile" "connector-power.kicad_sch" (at 86.36 118.6946 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (instances
+      (project "Pre_Ignition"
+        (path "/fe159171-2aa9-4fbb-9e3c-a3bc14fca76b" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

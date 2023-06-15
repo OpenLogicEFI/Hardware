@@ -6,8 +6,8 @@
 
   (title_block
     (title "Engine Simulator")
-    (date "2023-04-09")
-    (rev "Production A")
+    (date "2023-06-15")
+    (rev "Production B")
     (company "DetonationEMS")
   )
 
@@ -25,7 +25,7 @@
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 1eb473a7-2f4f-4a60-a38d-bf7eb1d1b80c)
   )
-  (text "Design by Detonation" (at 165.1 48.26 0)
+  (text "Design by Detonation" (at 165.1 49.53 0)
     (effects (font (size 4 4) (thickness 0.9) bold) (justify left bottom))
     (uuid 47cfc175-39bf-4ea4-865a-4498ab43c890)
   )
@@ -33,6 +33,10 @@
     (at 20.32 143.51 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 6f222544-7312-466b-a4de-1c9086d44bc1)
+  )
+  (text "© 2023 DetonationEMS (Aaron S.)" (at 82.55 48.26 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid a391e602-ab86-4204-ac31-c91749542c5a)
   )
   (text "Simple Engine Simulator" (at 81.28 40.64 0)
     (effects (font (size 8 8) (thickness 0.9) bold) (justify left bottom))
