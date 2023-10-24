@@ -6,7 +6,7 @@
 
   (title_block
     (title "Pre-Ignition X4")
-    (date "2023-06-15")
+    (date "2023-10-24")
     (rev "C")
     (company "DetonationEMS")
     (comment 1 "detonationems.com")
@@ -1128,6 +1128,13 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "IDLE2" (shape input) (at 134.62 93.98 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 163bfa43-805e-48e9-ab81-930c1a9d3c70)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 142.2124 93.98 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "Fuel-Pump" (shape input) (at 71.755 95.885 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 1765d6b9-ca0e-49c2-8c3c-8ab35eb3909b)
@@ -1142,11 +1149,11 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "HC2" (shape input) (at 134.62 96.52 0) (fields_autoplaced)
+  (global_label "VVT" (shape input) (at 134.62 96.52 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 19515fa4-c166-4b6e-837d-c01a89e98000)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 27.94 148.59 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 140.0958 96.52 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "INJ1" (shape input) (at 134.62 101.6 0) (fields_autoplaced)
@@ -1394,13 +1401,6 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "HC1" (shape input) (at 134.62 93.98 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid f879c0e8-5893-4eb4-8e59-2292a632100f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 27.94 148.59 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
 
   (symbol (lib_id "Connector_Generic:Conn_02x12_Counter_Clockwise") (at 76.835 88.265 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
@@ -1417,30 +1417,30 @@
     (property "Datasheet" "~" (at 76.835 88.265 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid eb9a5e38-4106-4cce-8c42-54e4327ee52e))
-    (pin "10" (uuid 03aa4aa5-9304-4fcf-ae13-ebe5663e1854))
-    (pin "11" (uuid 1437cf69-ba02-4bd4-b13f-2f0e1f494f96))
-    (pin "12" (uuid 5b9a3b0a-084f-4be6-9213-1b704e06677b))
-    (pin "13" (uuid fb4896b3-cc64-4a11-b428-d01f3600115d))
-    (pin "14" (uuid 39a39792-8398-4a60-bec3-9e28b759a61f))
-    (pin "15" (uuid 718c3c39-73dd-43c0-840e-36c985a05730))
-    (pin "16" (uuid 0e120149-4607-4517-85ac-7f794affc6cb))
-    (pin "17" (uuid 179d200d-2a6e-4708-8c68-0711267a27c0))
-    (pin "18" (uuid a135eead-e541-4c49-971f-90597e579f27))
-    (pin "19" (uuid 190fa803-d2d6-4446-b51d-d0f7131362b1))
-    (pin "2" (uuid efc51994-5442-4e96-8457-34efdb720c89))
-    (pin "20" (uuid 6c6a44be-0ef2-449c-8cdc-7ddce84a84de))
-    (pin "21" (uuid 19dc47aa-60ac-4f93-9eab-c3dc34b89ccd))
-    (pin "22" (uuid e340d239-1dcc-476d-b2a6-3a4b9e7f90be))
-    (pin "23" (uuid 24e16bd7-2f62-436d-9464-d439f15ec075))
-    (pin "24" (uuid d237eb33-9957-4a5c-b47c-d44eca069ada))
-    (pin "3" (uuid aed0a390-e426-49e5-bea8-01421517d5de))
-    (pin "4" (uuid e1782781-6ad2-4f75-a890-2ee73e2c284b))
-    (pin "5" (uuid 795e377d-7ee2-4b52-9f3d-8673ac272dbc))
-    (pin "6" (uuid 704d6d8b-92bf-4f28-bcf6-9d0f3e13d0e4))
-    (pin "7" (uuid 45fc168c-fe8c-4371-bf03-83fcf7692c08))
-    (pin "8" (uuid a12d8c7c-622f-4ba4-bfb2-65cbd2da79cd))
-    (pin "9" (uuid 1c3627f9-1535-4f55-a7b1-ecb389a7d580))
+    (pin "1" (uuid 5147a4cb-284d-4595-ae88-bd46c7ac66ae))
+    (pin "10" (uuid e4d59a80-1b7d-4937-986f-cb48e8208a1b))
+    (pin "11" (uuid 916e4954-3392-41eb-95e6-942e0bca4b89))
+    (pin "12" (uuid 6ce88f32-5ea9-42c3-9740-4d7bc0493c29))
+    (pin "13" (uuid 6916deae-d9f6-465a-9834-c879bcd7cd3b))
+    (pin "14" (uuid 93ab1f5b-574e-4807-aced-3dff5894f8f7))
+    (pin "15" (uuid 0d0cead6-1a2e-46ab-bf45-6e7bb7b13b76))
+    (pin "16" (uuid a852f601-7594-4a4b-b732-3bd9208fc214))
+    (pin "17" (uuid 0eeea5d5-19bc-4670-9a79-2251b0273440))
+    (pin "18" (uuid f02dd8cb-eb31-4e57-91d9-0e78fec573de))
+    (pin "19" (uuid 1ea647f5-de13-437f-87fd-6ffce20a2cd2))
+    (pin "2" (uuid a4bde0e2-3284-4702-849d-369ab9b3915c))
+    (pin "20" (uuid b627587d-f51d-4cb0-864a-0edf5db2c65d))
+    (pin "21" (uuid 340f3cdb-48e2-4163-a9df-5360be9c2566))
+    (pin "22" (uuid 1af6813b-d4ab-488a-8075-6416b19cd34c))
+    (pin "23" (uuid e8abd4f3-d892-40e6-8471-d0ec49eff0e8))
+    (pin "24" (uuid aca01a7b-5f3a-456d-8dde-efb03ddcf3a2))
+    (pin "3" (uuid 93a5e3da-a78f-4c80-8f9b-24f082913323))
+    (pin "4" (uuid 759a8d70-2624-4a77-8832-a666028a14e6))
+    (pin "5" (uuid dfd59f79-15bd-4176-a05f-38cbe009fbdc))
+    (pin "6" (uuid b83afd40-b702-46f2-a70a-6d074db90458))
+    (pin "7" (uuid 3df8ec59-fc04-461c-856a-7c5db8f31ebc))
+    (pin "8" (uuid ea951e95-26aa-45a5-b2b1-b367f3c864ec))
+    (pin "9" (uuid 8b018ca5-9b91-4e02-abf4-efb21ef3eeb2))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1465,7 +1465,7 @@
     (property "Datasheet" "" (at 94.615 75.565 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 504f783f-4c28-4efc-8f25-0f891c412559))
+    (pin "1" (uuid 92f7a74e-5055-48bc-94c0-8b93a63424a7))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1490,7 +1490,7 @@
     (property "Datasheet" "" (at 62.23 103.505 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a4990744-d707-4ecc-a96d-d9288aa9f15c))
+    (pin "1" (uuid 33dc8f22-5da1-4cf5-84e3-37055d3aac9e))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1515,7 +1515,7 @@
     (property "Datasheet" "" (at 118.745 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 47544fdb-19b8-4f75-827a-5b632799d73d))
+    (pin "1" (uuid 287648cf-f774-41a8-bf0e-57b0ce9744ea))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1540,7 +1540,7 @@
     (property "Datasheet" "" (at 147.32 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a7a2fd2f-2098-410d-89dc-d02e6c06261a))
+    (pin "1" (uuid 1d2df44b-01a1-4446-a66a-c7d9f0778eb6))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1565,26 +1565,26 @@
     (property "Datasheet" "~" (at 127 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 21339813-0b3a-457b-af13-b4bdbfcffabf))
-    (pin "10" (uuid cd69f76c-3471-4553-9975-a6ad8918c4b4))
-    (pin "11" (uuid cb8a7390-a164-43f2-8cee-e4de14318e5c))
-    (pin "12" (uuid 3075bacb-aaf4-43e0-83b7-599306a1206b))
-    (pin "13" (uuid 476e32df-27c0-4bf2-88fc-8ee9c605eea8))
-    (pin "14" (uuid b8c8ae1a-8076-4a98-a689-590eaba360ba))
-    (pin "15" (uuid 726be5b0-d536-4241-92ce-b6dc2e93546f))
-    (pin "16" (uuid 0597bddb-9ea7-4448-9649-59c39f494702))
-    (pin "17" (uuid 629c9f1d-cf4c-4edd-b352-fe6a9de97e64))
-    (pin "18" (uuid 35050bb4-e169-40b5-9f06-3df78625e66e))
-    (pin "19" (uuid 482d80be-c7b1-4225-8e3d-bf1fee49d5fd))
-    (pin "2" (uuid e4e35203-c6a9-4ae8-ba65-8f9d8f4d73da))
-    (pin "20" (uuid 7ac43fb2-a2b2-43e9-a43d-9519fa9733d4))
-    (pin "3" (uuid 4a934af9-2070-4b96-abc3-5e447d883316))
-    (pin "4" (uuid e5d98b68-4ecf-4577-97b3-0a014c38a146))
-    (pin "5" (uuid 78f8f849-4fa8-4fff-b922-e5f9fa221a78))
-    (pin "6" (uuid b0a0973f-40c2-4d3a-b6a2-b5b82e1eaf15))
-    (pin "7" (uuid 1444d5ed-f0a2-4b3f-a15b-b94fab5fa7bd))
-    (pin "8" (uuid cc6dba33-413d-4f68-9bea-35371524d89e))
-    (pin "9" (uuid 3862d3bd-e750-4b53-a1c2-5f205e3d7146))
+    (pin "1" (uuid a3c1de11-e648-4329-a9b4-07fe8def65c6))
+    (pin "10" (uuid 1002f72d-8d69-47bd-a70a-b056f96c40b6))
+    (pin "11" (uuid 04f1d73a-9158-4142-98fc-31d84948b58f))
+    (pin "12" (uuid ee6cd8eb-11d5-430b-b6b0-405e7e56e3ba))
+    (pin "13" (uuid cd5e2bd2-e8cb-4c01-9937-f8b0c908d83b))
+    (pin "14" (uuid e936192e-906b-4a0c-802a-10d1925954c9))
+    (pin "15" (uuid 88eac477-88d0-41ce-946d-74e73a1ca938))
+    (pin "16" (uuid 6ddd07a0-5263-4983-8997-30cfd6d1572e))
+    (pin "17" (uuid 509d684f-0480-4717-91d8-8a732544a26b))
+    (pin "18" (uuid 80a2f843-54dc-4850-9c43-b850d22c03ff))
+    (pin "19" (uuid 32e13a10-742e-4011-a7f3-6d95fd5e4566))
+    (pin "2" (uuid 413d06ed-f679-4a64-8137-363ad996f818))
+    (pin "20" (uuid 8582a847-a59b-48f2-87e5-6e1fa3163f4a))
+    (pin "3" (uuid 5fc77ccf-bb11-4f2c-be95-030b2de268be))
+    (pin "4" (uuid 34c8942b-e3f3-450a-b1de-ed26c0b871e4))
+    (pin "5" (uuid f27a5181-2bed-4fdc-8601-c76816df7a75))
+    (pin "6" (uuid 90807431-02b6-4468-a849-297f3b8903d1))
+    (pin "7" (uuid 89d128f8-5e8b-49b2-b67c-f8c8b38531ee))
+    (pin "8" (uuid df957136-63ef-43fb-b57e-0e5773a9f4a5))
+    (pin "9" (uuid 679733da-6351-4bb5-96f5-6673a0184272))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1609,7 +1609,7 @@
     (property "Datasheet" "" (at 205.74 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0dc4d03e-5a73-4eaa-a2b1-b87d4f419111))
+    (pin "1" (uuid 7d07133f-a158-4b9b-a22e-67e5a33275fa))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1634,7 +1634,7 @@
     (property "Datasheet" "" (at 193.04 142.875 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c0cb120f-c2dc-46e7-94aa-b0c580ea89ab))
+    (pin "1" (uuid f842c686-5f96-4386-bdff-ded05a8566a7))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1659,7 +1659,7 @@
     (property "Datasheet" "" (at 193.04 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9e6d6744-1f8b-4e97-bf98-dec3b98d3eee))
+    (pin "1" (uuid 0e5231dd-e2de-48c0-95c9-13df6875fc4f))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1684,7 +1684,7 @@
     (property "Datasheet" "" (at 105.41 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 456c549e-983a-4c4a-bcc1-fb370258315e))
+    (pin "1" (uuid 9ab436b5-1fab-42b5-ad5e-026b9b748db0))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1697,7 +1697,7 @@
   (symbol (lib_id "Device:R") (at 208.28 100.33 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6c0dde6d-fa4e-4c1d-b24c-5d263da89e57)
-    (property "Reference" "R32" (at 208.28 100.33 90)
+    (property "Reference" "R19" (at 208.28 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2k" (at 208.28 102.87 90)
@@ -1712,12 +1712,12 @@
     (property "LCSC" "C22975" (at 208.28 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a3e43440-ccb9-490e-80f7-d0c6669b2a21))
-    (pin "2" (uuid 9534011e-efe9-475b-a5ae-a7436bc79f5d))
+    (pin "1" (uuid 87953bc9-fba6-4cae-8e7c-ac2bc374d901))
+    (pin "2" (uuid 46a981cd-768f-4a62-bf55-5709faa81393))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
-          (reference "R32") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -1738,7 +1738,7 @@
     (property "Datasheet" "" (at 209.55 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 10dc1f44-f39b-44ca-8bb8-7100fddc2102))
+    (pin "1" (uuid f048100d-6e4b-41ee-8f55-cac19d03c275))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1763,10 +1763,10 @@
     (property "Datasheet" "~" (at 217.17 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 68eebac0-5825-4851-ad40-05522d8583f6))
-    (pin "2" (uuid f81a04d8-d380-46c2-a83e-a166a82da8a9))
-    (pin "3" (uuid d3a6a23f-8dab-4db2-a020-f1763f8ea5ce))
-    (pin "4" (uuid 0e082cac-e58e-41c0-b526-17e86b170f52))
+    (pin "1" (uuid d59475b3-e814-4e92-9aa9-856c169bf028))
+    (pin "2" (uuid 4f0f2b3c-cd6e-479f-afbc-9a8460903fa5))
+    (pin "3" (uuid 5bc82a39-275e-465f-adb0-c69ebdb442d7))
+    (pin "4" (uuid 1701874d-8422-41cc-9127-8db6cc77d2bc))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1791,7 +1791,7 @@
     (property "Datasheet" "" (at 204.47 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 170091fa-16f3-46c3-b8cb-3ff61fa2fa0b))
+    (pin "1" (uuid 23853b31-50bc-4cc6-a1c6-0b805cb8ae33))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1816,10 +1816,10 @@
     (property "Datasheet" "~" (at 219.71 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bdb38622-8f85-48ba-b930-b21c6ba63133))
-    (pin "2" (uuid df938cf1-fbe2-44fc-8917-a7b2fb371094))
-    (pin "3" (uuid dccefb88-d8cd-4e60-bb20-eceef01242ab))
-    (pin "4" (uuid df1fd29a-9e75-4014-885f-df88646535af))
+    (pin "1" (uuid d34b558e-e69e-49eb-aea9-82d2c0aed489))
+    (pin "2" (uuid 70e0ccda-8e0c-4e9e-bdeb-061c80b04bf4))
+    (pin "3" (uuid fef3146a-a50e-4bdf-a86c-980a5f387843))
+    (pin "4" (uuid ffccac66-44d9-4e11-a800-ccd7abf68bae))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1832,7 +1832,7 @@
   (symbol (lib_id "Device:R") (at 200.66 59.69 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8aec0855-30d7-4eb6-8b27-f79e673cb106)
-    (property "Reference" "R26" (at 198.12 59.69 90)
+    (property "Reference" "R29" (at 198.12 59.69 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 199.39 62.23 90)
@@ -1847,12 +1847,12 @@
     (property "LCSC" "C21190" (at 200.66 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 507e5d70-a162-47f6-8622-ec911f10618c))
-    (pin "2" (uuid 8779acfc-6d78-4333-a754-5558fbcb6387))
+    (pin "1" (uuid aca404a9-e2db-46a4-a9b7-792084c680b3))
+    (pin "2" (uuid 94f8a260-4036-44e1-b9ac-4eff4ce6d380))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
-          (reference "R26") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
     )
@@ -1873,7 +1873,7 @@
     (property "Datasheet" "" (at 210.82 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 343f6ace-52b0-4f14-a6f5-6f6ab3f0f4e6))
+    (pin "1" (uuid c535660b-78f4-4e0e-951b-cfe4287ecb2e))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1898,7 +1898,7 @@
     (property "Datasheet" "" (at 207.01 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1c49cd94-9fc7-4c1d-bb93-39aa8883a2fb))
+    (pin "1" (uuid 91dfcde9-e012-419a-b064-fd222ee31c34))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1911,7 +1911,7 @@
   (symbol (lib_id "Device:R") (at 200.66 95.25 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a946303b-ebda-41de-8bf2-9b21ffb7b3f9)
-    (property "Reference" "R27" (at 198.12 95.25 90)
+    (property "Reference" "R20" (at 198.12 95.25 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 199.39 97.79 90)
@@ -1926,12 +1926,12 @@
     (property "LCSC" "C21190" (at 200.66 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 64431d38-9928-4c4f-8106-5dffd0eb4335))
-    (pin "2" (uuid 28cb7368-a80c-4e00-b7c1-07442a3b09bd))
+    (pin "1" (uuid 6a65a55d-e445-4b29-888a-92b8a9a0d69e))
+    (pin "2" (uuid bd08bf48-86ac-46b9-b222-60ba5de98cb4))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
-          (reference "R27") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -1952,7 +1952,7 @@
     (property "Datasheet" "" (at 203.2 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 90b87195-706f-4303-9878-1c695185a389))
+    (pin "1" (uuid 66acdea4-8aae-4bf6-b29a-fb3e0731fdd8))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -1977,30 +1977,30 @@
     (property "Datasheet" "~" (at 203.2 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d400029c-b625-4f3e-b77b-c3970277eed9))
-    (pin "10" (uuid a49f3559-0baa-4b70-8feb-cf22e39b65b6))
-    (pin "11" (uuid 9db2ae71-00f6-4972-936d-e05adb5ba53e))
-    (pin "12" (uuid c3bfb87a-c300-469d-917e-803e4763bddb))
-    (pin "13" (uuid f22a42e1-eabc-4ade-8ff1-de42a99d22f9))
-    (pin "14" (uuid 0897bcf1-c725-4617-ae10-9ab79783a3fa))
-    (pin "15" (uuid 32ba8d81-9e6a-4ad7-94a4-2195da6d9ea8))
-    (pin "16" (uuid 9c33d417-4bdc-4a3f-a942-c6994a833660))
-    (pin "17" (uuid ff4eed1c-47c6-47f2-a1f3-18de4c744be4))
-    (pin "18" (uuid bd7f8192-3554-42ca-b7d8-9a8d470b8009))
-    (pin "19" (uuid fd4aa6ee-98e0-4ea3-b334-c392854518c5))
-    (pin "2" (uuid 84771299-b254-40f2-9fa8-4d8a8a4db85c))
-    (pin "20" (uuid d22b3253-3f0a-4837-9abe-414a66eb3949))
-    (pin "21" (uuid abc2fe0d-9045-425a-98e2-d1db412dab7c))
-    (pin "22" (uuid 6e852483-313b-4c5b-b413-f616f0d3067c))
-    (pin "23" (uuid 519abc7f-c865-480a-8580-b70a018e7607))
-    (pin "24" (uuid 928bfff2-9b80-47ea-a92a-a4557025febf))
-    (pin "3" (uuid b9327894-0afd-4088-b024-17c770823991))
-    (pin "4" (uuid 1ecc9c3c-b815-4346-a0b6-e48b787c3d06))
-    (pin "5" (uuid f9d1c8b3-e128-4f99-8c97-eb6ad967e9ce))
-    (pin "6" (uuid 957b98aa-be5e-4cce-9645-96341f52abb9))
-    (pin "7" (uuid 77760b1b-ac48-4cae-b37a-cf299126e60f))
-    (pin "8" (uuid ce33d205-242b-4ea5-94d6-37f2b498fbfb))
-    (pin "9" (uuid a8e5f800-5546-4018-9f09-0b0d8f7f344c))
+    (pin "1" (uuid 35dc69b8-cb05-4c5d-91be-dd71d065adcb))
+    (pin "10" (uuid b93c0ed9-3530-4e8b-b33e-cb10f1a1d06f))
+    (pin "11" (uuid 29e2bbd7-e117-46ad-9267-ef0ec1ee85a9))
+    (pin "12" (uuid 4bd07435-cc25-443e-9011-d32849a2c854))
+    (pin "13" (uuid f0645218-e2e8-4c4f-83a0-5c4db86cf9a4))
+    (pin "14" (uuid 61e3005d-c6a0-4c2f-8e00-5e54d18bf1ba))
+    (pin "15" (uuid 02cbe0b6-1347-43dd-8066-43799928bce1))
+    (pin "16" (uuid 9eeb5231-6d9b-4077-be86-10c0a358a12b))
+    (pin "17" (uuid 373e52c6-fff3-4086-bf47-b93b60356c35))
+    (pin "18" (uuid f79a2a7e-d4cc-44dc-9798-649f6e045957))
+    (pin "19" (uuid d48f5926-050d-4c96-9d32-ffa9738836f0))
+    (pin "2" (uuid 8ddf7e36-760a-4371-a27a-cd844130f7d7))
+    (pin "20" (uuid f37e6684-eca2-4ba9-a71f-09c3f5fff604))
+    (pin "21" (uuid ae70e136-bbe3-40fc-9a99-4871d5514b43))
+    (pin "22" (uuid ad37b259-725d-4465-aefa-997a6f6d0ba2))
+    (pin "23" (uuid ca71d2db-9eed-433e-9044-b05f8290dcc0))
+    (pin "24" (uuid cd3209e5-1fdc-4d3f-8f8c-ea627e3f68f7))
+    (pin "3" (uuid 0ade9832-fc88-437c-8282-8ecdbf6a2529))
+    (pin "4" (uuid ab387ada-4591-4bb8-a6e4-947114b4512f))
+    (pin "5" (uuid 46fa3820-df30-4acb-a7ef-1310a9a6003f))
+    (pin "6" (uuid 8337f7fb-2735-4e83-94f0-4d63c5c52406))
+    (pin "7" (uuid 61f0ffd1-cb8b-4f18-81cb-703aa1bd30ec))
+    (pin "8" (uuid 0953ca3e-05e3-4331-9a84-75fe17d843ed))
+    (pin "9" (uuid 2a38c96c-2d18-4ded-84fb-50cdec6b2fdc))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -2013,7 +2013,7 @@
   (symbol (lib_id "Device:R") (at 209.55 63.5 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e97acf37-075a-4fd2-90d0-000491ed2bb4)
-    (property "Reference" "R31" (at 209.55 63.5 90)
+    (property "Reference" "R33" (at 209.55 63.5 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2k" (at 209.55 66.04 90)
@@ -2028,12 +2028,12 @@
     (property "LCSC" "C22975" (at 209.55 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 666114f2-37c6-4d4d-b225-e65ac1d19d4f))
-    (pin "2" (uuid b79c2fcd-7e31-460e-b780-2986ea3db738))
+    (pin "1" (uuid 07749d09-482a-437c-8270-7441fce8a775))
+    (pin "2" (uuid 608dd993-485e-480d-a363-4d381ec636f2))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
-          (reference "R31") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
     )

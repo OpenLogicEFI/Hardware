@@ -6,13 +6,86 @@
 
   (title_block
     (title "Pre-Ignition X4")
-    (date "2023-06-15")
+    (date "2023-10-24")
     (rev "C")
     (company "DetonationEMS")
     (comment 1 "detonationems.com")
   )
 
   (lib_symbols
+    (symbol "Detonation:SMAJ30CA" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D19" (at 0 6.35 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "SMF30CA" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "Diode_SMD:D_SOD-123F" (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "SMF30CA" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "bidirectional diode TVS voltage suppressor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "400W bidirectional Transient Voltage Suppressor, 30.0Vr, SMA(DO-214AC)" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "D*SMA*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SMAJ30CA_0_1"
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy -1.27 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 -1.27)
+            (xy 0 0)
+            (xy -2.54 1.27)
+            (xy -2.54 -1.27)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.508 1.27)
+            (xy 0 1.27)
+            (xy 0 -1.27)
+            (xy -0.508 -1.27)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy 2.54 -1.27)
+            (xy 0 0)
+            (xy 2.54 1.27)
+          )
+          (stroke (width 0.2032) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "SMAJ30CA_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "A1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "A2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -237,68 +310,6 @@
         )
       )
       (symbol "1N4148W_1_1"
-        (pin passive line (at -3.81 0 0) (length 2.54)
-          (name "K" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 3.81 0 180) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Diode:BZX84Cxx" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "BZX84Cxx" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Diode_SMD:D_SOT-23_ANK" (at 0 -4.445 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "zener diode" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "300mW Zener Diode, SOT-23" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "D*SOT?23*ANK*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "BZX84Cxx_0_1"
-        (polyline
-          (pts
-            (xy 1.27 0)
-            (xy -1.27 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 -1.27)
-            (xy -1.27 1.27)
-            (xy -0.762 1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -1.27)
-            (xy 1.27 1.27)
-            (xy -1.27 0)
-            (xy 1.27 -1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "BZX84Cxx_1_1"
         (pin passive line (at -3.81 0 0) (length 2.54)
           (name "K" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -778,6 +789,9 @@
   (junction (at 148.59 54.61) (diameter 0) (color 0 0 0 0)
     (uuid 128427c0-c72c-4522-bb9b-bcb5098b0362)
   )
+  (junction (at 198.12 133.35) (diameter 0) (color 0 0 0 0)
+    (uuid 18a58c4c-917b-481f-8e2b-e21ae1e95ee9)
+  )
   (junction (at 203.2 49.53) (diameter 0) (color 0 0 0 0)
     (uuid 37072cc5-0399-499f-b738-cb44b6fbbcab)
   )
@@ -811,6 +825,12 @@
   (junction (at 66.04 49.53) (diameter 0) (color 0 0 0 0)
     (uuid 9ade47d9-fb26-42db-9576-1fb122f66ac1)
   )
+  (junction (at 132.08 132.08) (diameter 0) (color 0 0 0 0)
+    (uuid ab8ec613-94aa-4e25-9d16-ac424b80558d)
+  )
+  (junction (at 196.85 102.87) (diameter 0) (color 0 0 0 0)
+    (uuid ad0bac6e-4287-4c31-8681-b696ca184dea)
+  )
   (junction (at 203.2 54.61) (diameter 0) (color 0 0 0 0)
     (uuid d46a38f4-9e8d-426c-86dc-cf5dd14cd94d)
   )
@@ -825,6 +845,9 @@
   )
   (junction (at 113.03 140.97) (diameter 0) (color 0 0 0 0)
     (uuid f8e927af-4836-4b0f-8a57-dbca5a18a442)
+  )
+  (junction (at 132.08 102.87) (diameter 0) (color 0 0 0 0)
+    (uuid fa9bac88-4d5b-41db-b49d-6d3a367d3638)
   )
 
   (wire (pts (xy 189.23 102.87) (xy 185.42 102.87))
@@ -867,6 +890,10 @@
   (wire (pts (xy 234.95 49.53) (xy 237.49 49.53))
     (stroke (width 0) (type default))
     (uuid 1a0538be-d1e4-42a8-a72b-526c2ea3e6e1)
+  )
+  (wire (pts (xy 200.66 133.35) (xy 198.12 133.35))
+    (stroke (width 0) (type default))
+    (uuid 1b0fcb08-09f0-4b17-82a4-ce846b0d2876)
   )
   (wire (pts (xy 113.03 114.3) (xy 113.03 111.76))
     (stroke (width 0) (type default))
@@ -926,7 +953,7 @@
     (stroke (width 0) (type default))
     (uuid 3ba59656-e36e-4caa-8957-90ed8686b3d3)
   )
-  (wire (pts (xy 190.5 133.35) (xy 186.69 133.35))
+  (wire (pts (xy 189.23 133.35) (xy 186.69 133.35))
     (stroke (width 0) (type default))
     (uuid 3c19fda9-55de-469e-9693-2d8993bca106)
   )
@@ -946,6 +973,14 @@
     (stroke (width 0) (type default))
     (uuid 4198eb99-d244-457e-8768-395280df1a66)
   )
+  (wire (pts (xy 120.65 102.87) (xy 123.19 102.87))
+    (stroke (width 0) (type default))
+    (uuid 446fb7be-3062-4c7a-8ae0-97c910ae3c02)
+  )
+  (wire (pts (xy 196.85 133.35) (xy 198.12 133.35))
+    (stroke (width 0) (type default))
+    (uuid 4751ad1d-70c7-4192-a9f8-c6b72b171078)
+  )
   (wire (pts (xy 203.2 49.53) (xy 204.47 49.53))
     (stroke (width 0) (type default))
     (uuid 477d7a97-a7c1-452a-bbd3-05d7d79ffde5)
@@ -961,6 +996,10 @@
   (wire (pts (xy 120.65 102.87) (xy 120.65 104.14))
     (stroke (width 0) (type default))
     (uuid 5080cf4c-abda-4232-b279-44d0e6b9bde3)
+  )
+  (wire (pts (xy 132.08 132.08) (xy 132.08 135.89))
+    (stroke (width 0) (type default))
+    (uuid 511b9ed0-5be6-4a2a-9fbf-3aee5a474620)
   )
   (wire (pts (xy 116.84 45.72) (xy 115.57 45.72))
     (stroke (width 0) (type default))
@@ -994,13 +1033,13 @@
     (stroke (width 0) (type default))
     (uuid 59058a09-f800-497d-b8e1-cdf9632c6766)
   )
-  (wire (pts (xy 124.46 102.87) (xy 120.65 102.87))
-    (stroke (width 0) (type default))
-    (uuid 5b867f3d-ce38-4d21-95dd-fe114f76e9dc)
-  )
   (wire (pts (xy 212.09 49.53) (xy 213.36 49.53))
     (stroke (width 0) (type default))
     (uuid 5dffd1d6-faf9-418e-b9a0-84fb6b6b4454)
+  )
+  (wire (pts (xy 198.12 133.35) (xy 198.12 137.16))
+    (stroke (width 0) (type default))
+    (uuid 5e3b3479-d27e-435f-829d-03da73753305)
   )
   (wire (pts (xy 187.96 58.42) (xy 194.31 58.42))
     (stroke (width 0) (type default))
@@ -1019,6 +1058,10 @@
     (uuid 644ebc55-9b92-49bd-8dfa-8a3a0dd8d76d)
   )
 
+  (wire (pts (xy 130.81 102.87) (xy 132.08 102.87))
+    (stroke (width 0) (type default))
+    (uuid 64dee1f2-0610-4a7a-b092-9e2bec8baa8b)
+  )
   (wire (pts (xy 160.02 43.18) (xy 158.75 43.18))
     (stroke (width 0) (type default))
     (uuid 6590521f-35e5-46b0-8738-31242ffa8eb5)
@@ -1063,6 +1106,10 @@
     (stroke (width 0) (type default))
     (uuid 7c11b885-29b4-4eb2-b782-dde8e3724f0c)
   )
+  (wire (pts (xy 134.62 102.87) (xy 132.08 102.87))
+    (stroke (width 0) (type default))
+    (uuid 7db9f625-dcf8-4fdd-ba56-c5c0f2a4351a)
+  )
   (wire (pts (xy 259.08 44.45) (xy 259.08 43.18))
     (stroke (width 0) (type default))
     (uuid 7fc6aa90-f33a-4efb-a943-4cd15198c4aa)
@@ -1090,11 +1137,15 @@
 
   (wire (pts (xy 132.08 102.87) (xy 132.08 106.68))
     (stroke (width 0) (type default))
-    (uuid 89be6ff8-dff7-4df0-876d-d5989d658e36)
+    (uuid 8743b6d3-6643-49ad-8941-15b716b7f041)
   )
   (wire (pts (xy 234.95 54.61) (xy 237.49 54.61))
     (stroke (width 0) (type default))
     (uuid 8ad87914-7d16-4bb0-8d28-42b3830fb9d5)
+  )
+  (wire (pts (xy 199.39 102.87) (xy 196.85 102.87))
+    (stroke (width 0) (type default))
+    (uuid 8dac1fee-d555-4ddc-b0af-a990bc697684)
   )
   (wire (pts (xy 162.56 144.78) (xy 168.91 144.78))
     (stroke (width 0) (type default))
@@ -1169,10 +1220,6 @@
     (stroke (width 0) (type default))
     (uuid bf861177-aa77-48f3-a196-dc78d3319873)
   )
-  (wire (pts (xy 196.85 102.87) (xy 196.85 106.68))
-    (stroke (width 0) (type default))
-    (uuid c1b73b2b-a0dd-4b0e-8d3d-c3beea420b93)
-  )
   (wire (pts (xy 100.33 58.42) (xy 107.95 58.42))
     (stroke (width 0) (type default))
     (uuid c39f8b3d-19e8-4b96-9bd9-610fcc96fa62)
@@ -1193,17 +1240,9 @@
     (stroke (width 0) (type default))
     (uuid d25a1e45-06d1-4c1c-9b3a-0fd8abd0bfed)
   )
-  (wire (pts (xy 198.12 133.35) (xy 198.12 137.16))
-    (stroke (width 0) (type default))
-    (uuid d26fce45-c1d6-42bc-931d-972bf3799097)
-  )
   (wire (pts (xy 175.26 114.3) (xy 177.8 114.3))
     (stroke (width 0) (type default))
     (uuid d36e7ed4-f2bc-4d88-86ae-317d3c24af1a)
-  )
-  (wire (pts (xy 132.08 132.08) (xy 132.08 135.89))
-    (stroke (width 0) (type default))
-    (uuid d37a42c4-6950-4517-b4dd-96056acf0925)
   )
   (wire (pts (xy 245.11 54.61) (xy 247.65 54.61))
     (stroke (width 0) (type default))
@@ -1239,6 +1278,10 @@
     (uuid eb83440d-aa8b-4a1e-9e93-00cf0de78de9)
   )
 
+  (wire (pts (xy 134.62 132.08) (xy 132.08 132.08))
+    (stroke (width 0) (type default))
+    (uuid ed44045c-b7b3-4241-8c98-0bf5b7186905)
+  )
   (wire (pts (xy 252.73 43.18) (xy 259.08 43.18))
     (stroke (width 0) (type default))
     (uuid f11a78b7-152e-46cf-81d1-bc8194db05a9)
@@ -1246,6 +1289,10 @@
   (wire (pts (xy 148.59 43.18) (xy 148.59 49.53))
     (stroke (width 0) (type default))
     (uuid f200fd9f-b148-4c3e-9ad3-d8b079190e4a)
+  )
+  (wire (pts (xy 196.85 102.87) (xy 196.85 106.68))
+    (stroke (width 0) (type default))
+    (uuid f8cd6c99-4113-474e-a097-456db56495cf)
   )
   (wire (pts (xy 200.66 49.53) (xy 203.2 49.53))
     (stroke (width 0) (type default))
@@ -1264,16 +1311,21 @@
     (effects (font (size 3.5 3.5) (thickness 0.7) bold) (justify left bottom))
     (uuid 0df798c0-963e-4340-a737-18e50763521e)
   )
+  (text "D6-D13 only need to be\npopulated when NOT using \ninternally clamped \ninjector mosfets.\n\nD6-D9 Fast switching\n\nD10-D13 Zener Value\nmust be below mosfet Vds.\n(Recommend Zener 36-60v)"
+    (at 213.36 107.95 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 64bceb78-72ca-4169-8888-c468fd09f9ee)
+  )
   (text "Ignition Output" (at 34.29 30.48 0)
     (effects (font (size 3.5 3.5) (thickness 0.7) bold) (justify left bottom))
     (uuid cfec88d2-05ea-4320-9be6-2559d89ee700)
   )
 
-  (global_label "INJ1" (shape input) (at 132.08 102.87 90) (fields_autoplaced)
+  (global_label "INJ1" (shape input) (at 134.62 102.87 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 22614aba-2c26-4590-8e12-a7a6b6de48de)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 58.42 -26.67 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 141.0634 102.87 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "MC-D52" (shape input) (at 200.66 49.53 180) (fields_autoplaced)
@@ -1311,11 +1363,11 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "INJ2" (shape input) (at 132.08 132.08 90) (fields_autoplaced)
+  (global_label "INJ2" (shape input) (at 134.62 132.08 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 6e21d8a8-05db-450e-863d-764ba51b5b58)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 58.42 -26.67 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 141.0634 132.08 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "MC-D40" (shape input) (at 114.3 49.53 180) (fields_autoplaced)
@@ -1332,11 +1384,11 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "INJ4" (shape input) (at 198.12 133.35 90) (fields_autoplaced)
+  (global_label "INJ4" (shape input) (at 200.66 133.35 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 8f8bb641-6f96-48dd-a2de-b7e2aaf6efe0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 58.42 -26.67 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 207.1034 133.35 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "IGN-PWR" (shape input) (at 223.52 39.37 180) (fields_autoplaced)
@@ -1360,11 +1412,11 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "INJ3" (shape input) (at 196.85 102.87 90) (fields_autoplaced)
+  (global_label "INJ3" (shape input) (at 199.39 102.87 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid cebfc912-6282-4a1e-923e-74c4961c2aad)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 58.42 -26.67 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 205.8334 102.87 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "MC-D9" (shape input) (at 109.22 140.97 180) (fields_autoplaced)
@@ -1424,8 +1476,8 @@
     (property "LCSC" "C15849" (at 66.04 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e62868a4-8389-46c4-ad4c-bb51e21ee462))
-    (pin "2" (uuid afbafcb9-acb6-496c-84bc-cddb49ff9ba5))
+    (pin "1" (uuid c5db4326-7d47-4208-8e01-5b7f5c6ccf76))
+    (pin "2" (uuid 70db263f-8bbd-4476-ad58-0449e1adfdc7))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -1456,8 +1508,8 @@
     (property "LCSC" "C14663" (at 72.39 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6a3f9219-ca42-40c1-ac0c-3514bd0b46bd))
-    (pin "2" (uuid 0c0a2e63-2378-4da6-99bc-cf70ebe272e2))
+    (pin "1" (uuid 2f3c9729-a4fa-496d-a059-cdf17126e07f))
+    (pin "2" (uuid 85ec669d-dda5-4bc5-80f2-a8b436b883b4))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -1482,7 +1534,7 @@
     (property "Datasheet" "" (at 69.85 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid afaaec63-cb33-46f4-8738-c0fd26c21237))
+    (pin "1" (uuid 3cc6ccbf-a0dd-4644-aed1-6649104fe6a2))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -1495,7 +1547,7 @@
   (symbol (lib_id "Driver_FET:MIC4427") (at 137.16 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060be0358)
-    (property "Reference" "U2" (at 143.51 39.37 0)
+    (property "Reference" "U1" (at 143.51 39.37 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TC4424" (at 143.51 41.91 0)
@@ -1513,18 +1565,18 @@
     (property "LCSC" "C2685358" (at 137.16 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2e1274e3-13f9-4e9e-84ac-97145f7aaa3f))
-    (pin "2" (uuid 9a3f0810-6e5a-4c30-bde4-900541863e49))
-    (pin "3" (uuid 1e62ff52-1671-4ede-ae15-5840b99c70ca))
-    (pin "4" (uuid d66a8f1c-dd80-427a-8687-7cde46646cef))
-    (pin "5" (uuid fe31c8df-5086-46e0-a9b3-1a22bb6797f0))
-    (pin "6" (uuid d9042452-3e13-4175-8739-00440a1c109a))
-    (pin "7" (uuid ca81bce5-58ef-440e-8836-8326d160d54d))
-    (pin "8" (uuid 23808d9a-cef8-48d8-af56-d734474a56e6))
+    (pin "1" (uuid 06f5417b-f988-4681-ae22-76f870797650))
+    (pin "2" (uuid acf3309d-08c9-4283-b4d3-9d169050d51e))
+    (pin "3" (uuid 24e7a1e6-ead9-40f7-be79-78634d3cbaf3))
+    (pin "4" (uuid af323d78-9f92-4072-a60e-dafdd28776c1))
+    (pin "5" (uuid 10b6a083-998f-4b4c-bace-35769f281f75))
+    (pin "6" (uuid 74814587-5083-42fe-8b89-5ba850a2618e))
+    (pin "7" (uuid ff5acc32-226a-4667-9c44-09b068344b7d))
+    (pin "8" (uuid addffa85-2e2d-42e6-94e6-7be580ddac51))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "U2") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -1545,7 +1597,7 @@
     (property "Datasheet" "" (at 137.16 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid decfd276-3c1d-4237-a0a6-c3ce0ec1c27d))
+    (pin "1" (uuid 2466b556-d427-4400-a3e0-bd7c3f740fe5))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -1558,7 +1610,7 @@
   (symbol (lib_id "Device:R") (at 121.92 49.53 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060be4018)
-    (property "Reference" "R34" (at 121.285 49.53 90)
+    (property "Reference" "R35" (at 121.285 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 121.92 46.99 90)
@@ -1576,12 +1628,12 @@
     (property "LCSC" "C21190" (at 121.92 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 51ed515c-d18f-44c1-aadf-a18bf99b2ec6))
-    (pin "2" (uuid 8c1cda45-7467-4df9-94ef-bb2c86b1a2bc))
+    (pin "1" (uuid 6788ee0e-05ce-4950-ac9d-1924831df40b))
+    (pin "2" (uuid 4a3cfe23-ec94-48d0-a338-f0996b63bc2c))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R34") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
     )
@@ -1590,7 +1642,7 @@
   (symbol (lib_id "Device:R") (at 121.92 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060be46a3)
-    (property "Reference" "R29" (at 121.285 54.61 90)
+    (property "Reference" "R31" (at 121.285 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 121.92 57.15 90)
@@ -1608,12 +1660,12 @@
     (property "LCSC" "C21190" (at 121.92 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 612cc8b5-cacb-421d-ae58-df46b3b14558))
-    (pin "2" (uuid 44858ceb-b21c-4efa-85d3-b2fd89d1df18))
+    (pin "1" (uuid 4465a967-2e3a-4b41-b6a0-8be1e260ed0a))
+    (pin "2" (uuid 16839e40-9f5e-4d3e-8c19-0bfed14bfd8d))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R29") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
     )
@@ -1622,7 +1674,7 @@
   (symbol (lib_id "Device:R") (at 111.76 45.72 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060be498a)
-    (property "Reference" "R35" (at 113.665 45.72 90)
+    (property "Reference" "R36" (at 113.665 45.72 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 114.3 43.18 90)
@@ -1640,12 +1692,12 @@
     (property "LCSC" "C25803" (at 111.76 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b4c5ea99-7150-4353-a03f-261b9f23942c))
-    (pin "2" (uuid 1867a849-4b28-4934-bf51-7eb38c2e2ea3))
+    (pin "1" (uuid b4be05e2-de44-4383-823f-eec0e9dded6f))
+    (pin "2" (uuid b9ba71a2-5d92-46a7-8757-7ca8e128bac8))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R35") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
     )
@@ -1654,7 +1706,7 @@
   (symbol (lib_id "Device:R") (at 111.76 58.42 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060be519e)
-    (property "Reference" "R30" (at 109.855 58.42 90)
+    (property "Reference" "R32" (at 109.855 58.42 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 109.22 60.96 90)
@@ -1672,12 +1724,12 @@
     (property "LCSC" "C25803" (at 111.76 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cfb0f79d-be1d-4f3a-b845-337bb9f5e3a7))
-    (pin "2" (uuid c152596c-3845-4219-bdc9-7a526409cc3e))
+    (pin "1" (uuid 5cad58ea-6cc4-45d8-94fb-13b0db172b01))
+    (pin "2" (uuid 2cde3f75-2cb7-4e86-b6ee-754dd3511a32))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R30") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
     )
@@ -1698,7 +1750,7 @@
     (property "Datasheet" "" (at 100.33 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ed3352d7-8836-44f7-97cf-4232c98d3328))
+    (pin "1" (uuid 1e270086-00b0-46a0-b065-9c7427c08825))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -1711,7 +1763,7 @@
   (symbol (lib_id "Driver_FET:MIC4427") (at 223.52 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c00c9d)
-    (property "Reference" "U3" (at 229.87 39.37 0)
+    (property "Reference" "U2" (at 229.87 39.37 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TC4424" (at 229.87 41.91 0)
@@ -1726,18 +1778,18 @@
     (property "LCSC" "C2685358" (at 223.52 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2115d303-d6fb-474d-8736-72de113cf13d))
-    (pin "2" (uuid a883390d-5fcd-49a3-9215-8c63575bc456))
-    (pin "3" (uuid 8f888b3e-763f-4f0f-84b4-173d66ed0277))
-    (pin "4" (uuid a42a267c-2977-47f2-a013-98a3171ee80a))
-    (pin "5" (uuid da5b4010-2a26-4657-9681-3502a356e770))
-    (pin "6" (uuid 573929f3-a035-4556-a6f0-7c8bb532cb27))
-    (pin "7" (uuid 7229cc50-f10b-4a44-9d4e-1843bfd854a9))
-    (pin "8" (uuid 1fb30066-00a1-4a82-a380-d81f7003589b))
+    (pin "1" (uuid c285b477-b6a0-4bdc-a6da-ecff2965a71f))
+    (pin "2" (uuid 486da878-a7ba-4c8b-8b76-f7be0524c888))
+    (pin "3" (uuid a6b1dbd6-85b6-4282-a789-7d52399a7579))
+    (pin "4" (uuid 15353258-d5ec-4af4-9960-d479b6998c34))
+    (pin "5" (uuid 8de1fedb-7266-4111-8e52-d3d5233d0384))
+    (pin "6" (uuid db9d9918-cb70-4d66-b54a-6dc2f9bd5a8c))
+    (pin "7" (uuid 4907ecc4-20d2-41ac-8ab8-021b45e84b3e))
+    (pin "8" (uuid db4b9e14-c80f-402c-908b-20dc570b2811))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "U3") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -1746,7 +1798,7 @@
   (symbol (lib_id "Device:R") (at 241.3 49.53 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c00ca3)
-    (property "Reference" "R39" (at 241.3 49.53 90)
+    (property "Reference" "R40" (at 241.3 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10" (at 241.3 46.99 90)
@@ -1764,12 +1816,12 @@
     (property "LCSC" "C17903" (at 241.3 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 94935a95-8891-482c-ad38-1154e4bb7913))
-    (pin "2" (uuid 951b6f79-86f1-4754-b740-e334b9098494))
+    (pin "1" (uuid 45f303ed-6a95-44f5-a2e1-68293930da3a))
+    (pin "2" (uuid e5c918f4-8860-48c5-a263-5e1c5a6eb1d6))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R39") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
@@ -1778,7 +1830,7 @@
   (symbol (lib_id "Device:R") (at 241.3 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c00ca9)
-    (property "Reference" "R36" (at 241.3 54.61 90)
+    (property "Reference" "R37" (at 241.3 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10" (at 241.3 57.15 90)
@@ -1796,12 +1848,12 @@
     (property "LCSC" "C17903" (at 241.3 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5280e715-b8fc-4ffb-aba4-25b3f3066ef1))
-    (pin "2" (uuid d9d195d4-e37f-482f-a32f-d374eb65fb55))
+    (pin "1" (uuid ca0d6af7-346e-4011-b8b3-4f7861edb100))
+    (pin "2" (uuid 7d04cdf0-8bde-44c6-a2d7-1c2b96815c77))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R36") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
     )
@@ -1822,7 +1874,7 @@
     (property "Datasheet" "" (at 223.52 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aa82ff72-2d32-4217-aee4-7fe77d59a869))
+    (pin "1" (uuid f03c3d00-9a94-48fd-abb7-9743cb586996))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -1835,7 +1887,7 @@
   (symbol (lib_id "Device:R") (at 208.28 49.53 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c00cb7)
-    (property "Reference" "R40" (at 207.645 49.53 90)
+    (property "Reference" "R41" (at 207.645 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 208.28 46.99 90)
@@ -1853,12 +1905,12 @@
     (property "LCSC" "C21190" (at 208.28 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c2aefdfc-3ad7-4829-b92f-f189e6a920c4))
-    (pin "2" (uuid f3963ab7-1a38-4d95-bf85-8e35e2988314))
+    (pin "1" (uuid a1147746-6ac9-45c8-9b9f-a8ecb3e1f274))
+    (pin "2" (uuid 2655bf3b-2a23-4cd6-86a7-e0bc20ac7f5f))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R40") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
     )
@@ -1867,7 +1919,7 @@
   (symbol (lib_id "Device:R") (at 208.28 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c00cbd)
-    (property "Reference" "R37" (at 208.28 54.61 90)
+    (property "Reference" "R38" (at 208.28 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 208.28 57.15 90)
@@ -1885,12 +1937,12 @@
     (property "LCSC" "C21190" (at 208.28 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f6f89a21-276c-4d9e-a3ae-58ad9f021d3e))
-    (pin "2" (uuid 4676e685-e1d2-40ba-9baa-5e82d89fc49b))
+    (pin "1" (uuid 4f99169a-14ac-4b83-a2ad-a002ddac87a0))
+    (pin "2" (uuid 6a7778bb-8547-4657-91d8-3a88956b12e0))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R37") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
     )
@@ -1899,7 +1951,7 @@
   (symbol (lib_id "Device:R") (at 198.12 45.72 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c00cc3)
-    (property "Reference" "R41" (at 200.025 45.72 90)
+    (property "Reference" "R42" (at 200.025 45.72 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 200.66 43.18 90)
@@ -1917,12 +1969,12 @@
     (property "LCSC" "C25803" (at 198.12 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4c34f848-bdfc-4fc2-abd9-4cbed2811a7c))
-    (pin "2" (uuid 93194f2b-c953-4f03-9ba6-621f4c8855c9))
+    (pin "1" (uuid a25c6269-f48d-4f6a-975d-9e6a774b55af))
+    (pin "2" (uuid 78f3039d-fa67-4318-9147-5e8fb81aabdb))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R41") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
     )
@@ -1931,7 +1983,7 @@
   (symbol (lib_id "Device:R") (at 198.12 58.42 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c00cc9)
-    (property "Reference" "R38" (at 196.215 58.42 90)
+    (property "Reference" "R39" (at 196.215 58.42 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 196.215 60.96 90)
@@ -1949,12 +2001,12 @@
     (property "LCSC" "C25803" (at 198.12 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 379910df-000d-45db-b4a3-21d84a33cc86))
-    (pin "2" (uuid 15c81074-1f01-420d-8bb7-d55424a9351f))
+    (pin "1" (uuid 8a379db9-82b0-41d0-86f4-294d6ec142b0))
+    (pin "2" (uuid a865b356-ebda-4f8c-bcb6-fe21928d5c30))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R38") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
     )
@@ -1975,7 +2027,7 @@
     (property "Datasheet" "" (at 187.96 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7e2c6707-674e-4590-a6b7-59c9db582d68))
+    (pin "1" (uuid b707a865-faa1-47b1-8dcd-b1083852b54d))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2000,7 +2052,7 @@
     (property "Datasheet" "" (at 78.74 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c13fd6cf-da62-4295-ba9e-91651d24b044))
+    (pin "1" (uuid 6456569a-4590-4646-87a9-b97172dd2e99))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2013,7 +2065,7 @@
   (symbol (lib_id "Device:R") (at 240.03 43.18 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c25d03)
-    (property "Reference" "R25" (at 240.03 43.18 90)
+    (property "Reference" "R28" (at 240.03 43.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.4k" (at 240.03 41.275 90)
@@ -2031,12 +2083,12 @@
     (property "LCSC" "C22940" (at 240.03 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a0febee8-2292-4db0-b776-221e0c41eb46))
-    (pin "2" (uuid 51c44011-4c70-49b0-a067-d39e7cc9573f))
+    (pin "1" (uuid 50497a4f-3a1b-4eb5-829c-668a3f1b5422))
+    (pin "2" (uuid 5679b0cb-d5d4-46cf-86e2-869da6d1d60d))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R25") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -2045,7 +2097,7 @@
   (symbol (lib_id "Device:R") (at 240.03 62.23 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c277ea)
-    (property "Reference" "R24" (at 240.03 62.23 90)
+    (property "Reference" "R27" (at 240.03 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.4k" (at 240.03 64.77 90)
@@ -2063,12 +2115,12 @@
     (property "LCSC" "C22940" (at 240.03 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 31c9538f-bd8d-4adb-8f8d-3b245942f4f9))
-    (pin "2" (uuid e8ef240e-f613-4d24-8525-5efa4b243543))
+    (pin "1" (uuid d5bf96d8-c4e7-436e-aca9-86362d14cbcf))
+    (pin "2" (uuid 1755db40-b0d7-4b05-8765-5f8c76d86552))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R24") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -2095,8 +2147,8 @@
     (property "LCSC" "C72043" (at 248.92 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0c0ed4a2-968e-46f3-a91b-f7a59bd9e641))
-    (pin "2" (uuid 35587e2f-a0b1-4599-be20-b8e8e1bf2fbc))
+    (pin "1" (uuid 156ba333-2486-47a2-84e9-57aa4a03ac8e))
+    (pin "2" (uuid d5a5eed2-3c12-4a8a-becc-644dd55f74e6))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2127,8 +2179,8 @@
     (property "LCSC" "C72043" (at 248.92 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 14cdab37-cc33-477d-8a15-6beddb117ee2))
-    (pin "2" (uuid c8b2177d-d956-405f-ac31-a3d3e8631cfa))
+    (pin "1" (uuid cc461a36-1a2c-4bce-8053-14b89416c463))
+    (pin "2" (uuid 29a139ec-0fb4-4ccf-90aa-6e69848d5385))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2153,7 +2205,7 @@
     (property "Datasheet" "" (at 259.08 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3da7b429-f1e2-476f-9195-f027dd62ed26))
+    (pin "1" (uuid 03e8f82c-61d8-4c0c-afd6-c731d68a337b))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2166,7 +2218,7 @@
   (symbol (lib_id "Device:R") (at 153.67 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c3a811)
-    (property "Reference" "R28" (at 153.67 54.61 90)
+    (property "Reference" "R30" (at 153.67 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10" (at 153.67 57.15 90)
@@ -2184,12 +2236,12 @@
     (property "LCSC" "C17903" (at 153.67 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 696ed5c2-48ea-41c0-a4a9-c365c8457aec))
-    (pin "2" (uuid 57181ed3-f9da-459d-9a58-39936f5f0e87))
+    (pin "1" (uuid 8c8b0f40-bbfd-4d24-bedc-55411fa36bf8))
+    (pin "2" (uuid fe9e41b6-d178-4f66-aff4-427ef3e146e2))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R28") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
     )
@@ -2198,7 +2250,7 @@
   (symbol (lib_id "Device:R") (at 153.67 49.53 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c3a817)
-    (property "Reference" "R33" (at 153.67 49.53 90)
+    (property "Reference" "R34" (at 153.67 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10" (at 153.416 47.244 90)
@@ -2216,12 +2268,12 @@
     (property "LCSC" "C17903" (at 153.67 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8b51352d-4709-4de7-ac8b-741f99dc903f))
-    (pin "2" (uuid 24ab48c9-52d5-47b0-856c-c231954f1a6b))
+    (pin "1" (uuid 999c9179-b60f-4e35-8d8a-2377e0e009e6))
+    (pin "2" (uuid 900d7376-1b92-4917-a120-dfe688c17b04))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R33") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -2230,7 +2282,7 @@
   (symbol (lib_id "Device:R") (at 154.94 43.18 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c3a81d)
-    (property "Reference" "R23" (at 155.575 43.18 90)
+    (property "Reference" "R26" (at 155.575 43.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.4k" (at 154.94 40.64 90)
@@ -2245,12 +2297,12 @@
     (property "LCSC" "C22940" (at 154.94 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bcfc397e-1344-4727-b5a9-a6fcda01f5e8))
-    (pin "2" (uuid 25a3a6ac-9cba-4f99-b2de-d88acd467b42))
+    (pin "1" (uuid 420c71bd-906e-4c24-9506-e9b117e95b57))
+    (pin "2" (uuid 6432f1c2-365e-4899-9e17-e5d846e391e4))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R23") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -2259,7 +2311,7 @@
   (symbol (lib_id "Device:R") (at 154.94 62.23 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060c3a823)
-    (property "Reference" "R22" (at 154.94 62.23 90)
+    (property "Reference" "R24" (at 154.94 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.4k" (at 154.94 64.77 90)
@@ -2277,12 +2329,12 @@
     (property "LCSC" "C22940" (at 154.94 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e99cbe3a-ca23-4247-bca2-8ee42997577c))
-    (pin "2" (uuid 27512fa0-87f8-4f1c-8270-c2d44b1b862c))
+    (pin "1" (uuid 8ee557f9-571c-4da6-885a-7d4068a39859))
+    (pin "2" (uuid e5d800ff-1656-4a4d-b5f4-f516833441a4))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "R22") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -2309,8 +2361,8 @@
     (property "LCSC" "C72043" (at 163.83 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0a512736-9db6-4093-98c5-8298b2002bd9))
-    (pin "2" (uuid f3e6156e-7d01-4597-b7d3-9fd9cf393cea))
+    (pin "1" (uuid 8d0220d6-c556-4118-8a68-4763388c888f))
+    (pin "2" (uuid 109d8d2a-31fa-4ec9-a96c-3faf3a63d513))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2341,8 +2393,8 @@
     (property "LCSC" "C72043" (at 163.83 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b91f5296-e235-4243-9c4c-a037ab655311))
-    (pin "2" (uuid 3033a2dc-5388-4c5f-b2ba-29e4962c5ff5))
+    (pin "1" (uuid 9b2ffced-1f3a-4823-a185-43fac756b9e7))
+    (pin "2" (uuid 5c6c3e5f-78b8-4541-af74-89c5efa48670))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2367,7 +2419,7 @@
     (property "Datasheet" "" (at 172.72 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2c2af2fb-b8c0-4aa5-958a-d8c316415053))
+    (pin "1" (uuid 9654e201-a66d-4918-b5df-a22b6244190c))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2395,9 +2447,9 @@
     (property "LCSC" "C2583" (at 129.54 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2b6166ba-9123-435f-9bd2-b6d5c1713aa4))
-    (pin "2" (uuid 471c7622-46e2-487c-9aed-8cbbeb11cb32))
-    (pin "3" (uuid 1919cd79-f113-4fb2-b386-448d76f24ff2))
+    (pin "1" (uuid 2e0dc5ed-7180-4a04-850a-db688a43535e))
+    (pin "2" (uuid de0d01dd-68ad-4f9e-a8db-212af6ea714c))
+    (pin "3" (uuid 90ae6635-547c-451c-aad3-5faa3448b3c3))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2422,7 +2474,7 @@
     (property "Datasheet" "" (at 102.87 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5bcaabe3-a624-4d36-b368-a22c2c373754))
+    (pin "1" (uuid fac5964d-af2e-4ffa-b0a4-9aee48b2dfd8))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2453,8 +2505,8 @@
     (property "LCSC" "C25803" (at 106.68 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 266b5e8b-56a3-47c5-9121-e12b55bd2d44))
-    (pin "2" (uuid 12aa449c-5163-4205-96c0-182933fdf6a7))
+    (pin "1" (uuid 8306babc-eb4d-4356-a849-e73406283969))
+    (pin "2" (uuid 51af833c-518c-45d5-92ea-a82374956ab4))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2485,8 +2537,8 @@
     (property "LCSC" "C21190" (at 116.84 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 95b36f39-1d13-456a-87f5-b5a0c87c59fc))
-    (pin "2" (uuid 90609d50-a891-4cf0-bb9a-216b073dada0))
+    (pin "1" (uuid 10862bc6-5107-4100-a7ea-7bf6e0b25323))
+    (pin "2" (uuid c15163b4-9034-47d0-a139-cf284777ff40))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2511,7 +2563,7 @@
     (property "Datasheet" "" (at 132.08 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 91a4da65-ba89-4bb0-ae33-0c17f4aff19a))
+    (pin "1" (uuid bb11594b-6685-4374-8c97-8d76d8f3eae0))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2524,7 +2576,7 @@
   (symbol (lib_id "Diode:1N4148W") (at 120.65 107.95 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000615635e0)
-    (property "Reference" "D10" (at 115.57 102.87 90)
+    (property "Reference" "D11" (at 115.57 102.87 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148WS" (at 110.49 105.41 90)
@@ -2539,12 +2591,12 @@
     (property "LCSC" "C2128" (at 120.65 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9f63e86c-4ff8-4b46-ae55-95a3b294787b))
-    (pin "2" (uuid a6549c3c-6d59-4c3e-881d-484b765f2eda))
+    (pin "1" (uuid 2f2cf09a-677b-4e19-8573-7f86352671fa))
+    (pin "2" (uuid ce08037e-5778-45b0-930b-ec353cb9211f))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "D10") (unit 1)
+          (reference "D11") (unit 1)
         )
       )
     )
@@ -2568,9 +2620,9 @@
     (property "LCSC" "C2583" (at 194.31 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e303e906-e5ba-4d0c-b68f-3bca525e4abe))
-    (pin "2" (uuid d5ef6386-3a5b-4eb4-8b0f-14e6080aee09))
-    (pin "3" (uuid be704520-f797-44d9-9184-23dbcb04474d))
+    (pin "1" (uuid e4d151cd-1924-4c22-b890-316845bb216f))
+    (pin "2" (uuid 9a42fc61-d069-44d6-afc1-5b069e6cf55d))
+    (pin "3" (uuid 43cd9f4d-eedc-4897-900b-55e0d791b28d))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2595,7 +2647,7 @@
     (property "Datasheet" "" (at 165.1 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 35ac410e-49f8-4693-bc66-373577e8ab77))
+    (pin "1" (uuid cc113629-3788-4a4e-b768-5402aaf3cc81))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2626,8 +2678,8 @@
     (property "LCSC" "C25803" (at 171.45 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ccd744c0-aa52-44fe-9b04-133be3197f9c))
-    (pin "2" (uuid 7fc60750-14a8-406e-8399-73b05947fa95))
+    (pin "1" (uuid ec7b445c-ce87-428d-afb5-091343173f9b))
+    (pin "2" (uuid 0a9c0ee1-e287-4e4c-83ed-40b968425474))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2658,8 +2710,8 @@
     (property "LCSC" "C21190" (at 181.61 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9fa6e0e2-39e4-4ee4-86a8-2efbb3655706))
-    (pin "2" (uuid 3242c2c7-0e05-418e-84a4-832a8179ac88))
+    (pin "1" (uuid a6a0a4ce-6a5e-45ac-9b39-78d0dab11379))
+    (pin "2" (uuid 384e67e4-a6dc-4c1a-a859-318dadfa8572))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2684,7 +2736,7 @@
     (property "Datasheet" "" (at 196.85 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f29963a1-a76e-4ea0-b194-c5b74dce35ca))
+    (pin "1" (uuid 32899c54-7f42-4072-ac0e-94285ffe2818))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2697,7 +2749,7 @@
   (symbol (lib_id "Diode:1N4148W") (at 185.42 107.95 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061574317)
-    (property "Reference" "D8" (at 180.34 102.87 90)
+    (property "Reference" "D9" (at 180.34 102.87 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148WS" (at 175.26 105.41 90)
@@ -2712,12 +2764,12 @@
     (property "LCSC" "C2128" (at 185.42 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d9125154-9f3f-4a63-94ef-88bb51eff3ce))
-    (pin "2" (uuid 2718f694-fd72-42d5-9b61-3f7a92798346))
+    (pin "1" (uuid 1a336d5f-3868-496e-aa6a-9c6d597084a4))
+    (pin "2" (uuid 6303bb00-fab5-49b6-b9a9-898ad6b1be1e))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "D8") (unit 1)
+          (reference "D9") (unit 1)
         )
       )
     )
@@ -2741,9 +2793,9 @@
     (property "LCSC" "C2583" (at 195.58 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 711ce30c-cada-4787-bd51-eecbc8df0775))
-    (pin "2" (uuid 4a7c9f1a-26b5-44a1-b3b5-1f630797efc2))
-    (pin "3" (uuid 112e4f4d-814a-4f16-8406-7540648eb036))
+    (pin "1" (uuid 534f40e1-df9e-4a94-a8a5-ff3676cadc89))
+    (pin "2" (uuid 3ccc951b-7e5f-4fa3-8f56-a14435401b32))
+    (pin "3" (uuid 8eb16825-a96d-46da-8d94-21ea2b5af6d8))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2768,7 +2820,7 @@
     (property "Datasheet" "" (at 162.56 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f4871192-1c9b-4de1-af39-366e4e3ffabe))
+    (pin "1" (uuid 97e33459-fec9-42a3-84a7-184db4ec69ad))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2799,8 +2851,8 @@
     (property "LCSC" "C25803" (at 172.72 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d6498562-c950-4c1c-8cf0-b63514ebef4e))
-    (pin "2" (uuid e85273b2-c40b-4f0c-a2da-957f567ce6b7))
+    (pin "1" (uuid 081e02ba-7c32-4702-a43b-0b652cbf40ba))
+    (pin "2" (uuid b2a0fd08-4cc7-4af1-aa3d-3be035dd8efd))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2831,8 +2883,8 @@
     (property "LCSC" "C21190" (at 182.88 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 28c04c65-2b9f-42f9-9ece-138a70611fc2))
-    (pin "2" (uuid 2b8e7f82-27ed-40e4-8ed7-bd4d504f860d))
+    (pin "1" (uuid 2197fcde-0370-4636-93cc-f5057bed7840))
+    (pin "2" (uuid cea18e19-5c73-4d9c-8989-5ce5acedc529))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2857,7 +2909,7 @@
     (property "Datasheet" "" (at 198.12 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid da41c8c3-6298-41c9-8e8d-520b6f33133b))
+    (pin "1" (uuid 134b1978-2fa5-4779-9898-09c7e3586905))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2870,7 +2922,7 @@
   (symbol (lib_id "Diode:1N4148W") (at 186.69 138.43 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006158a72b)
-    (property "Reference" "D7" (at 181.61 133.35 90)
+    (property "Reference" "D8" (at 181.61 133.35 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148WS" (at 176.53 135.89 90)
@@ -2885,12 +2937,12 @@
     (property "LCSC" "C2128" (at 186.69 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4dbf8b53-1c05-410a-8f5f-3845868a0db3))
-    (pin "2" (uuid 6659fc5d-e4a0-4b66-99e4-94fe91ae3610))
+    (pin "1" (uuid de7659b9-3ad0-43e0-adca-290ed6c7b1ba))
+    (pin "2" (uuid 65f50d8a-d3b5-45c9-a15e-c0ccdfed0190))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "D7") (unit 1)
+          (reference "D8") (unit 1)
         )
       )
     )
@@ -2914,9 +2966,9 @@
     (property "LCSC" "C2583" (at 129.54 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 909c64f9-80b9-441e-86a0-2746ec78a2a6))
-    (pin "2" (uuid e92c0a9c-1d9d-4305-b5e1-e87e9de00c08))
-    (pin "3" (uuid a9b27a78-f8ff-428d-ac95-b7d07694cda6))
+    (pin "1" (uuid d4037ae6-23c3-4415-a763-f3c02713628c))
+    (pin "2" (uuid dd612843-eb7d-465b-b17c-2927ae4abcdf))
+    (pin "3" (uuid 9a03a610-ac6b-4a36-8a02-05d8bef03964))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2941,7 +2993,7 @@
     (property "Datasheet" "" (at 102.87 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6f3e3af6-87c7-4280-ab6d-bd0357be98dc))
+    (pin "1" (uuid c1fcfea1-9328-4f63-b032-ef3657a77109))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -2972,8 +3024,8 @@
     (property "LCSC" "C25803" (at 106.68 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 396913ef-c3b8-4ab7-84f9-d9a2780a1a70))
-    (pin "2" (uuid 3a662c7b-c091-4557-9962-4f918e36c1f6))
+    (pin "1" (uuid aad9e9dc-48c3-431a-aa8e-68048b256967))
+    (pin "2" (uuid 89933a3c-bac6-4cee-b20a-8e0080c7ad0e))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -3004,8 +3056,8 @@
     (property "LCSC" "C21190" (at 116.84 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4642600d-70d7-40ca-803a-4ef7ccbc8fd3))
-    (pin "2" (uuid 0ce699ea-824f-4156-8f4a-8d256e1f9499))
+    (pin "1" (uuid bf906dab-2c10-49e8-a3db-4f6e61dd005c))
+    (pin "2" (uuid 54a10e94-159b-4df6-864d-ac359682d759))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -3030,7 +3082,7 @@
     (property "Datasheet" "" (at 132.08 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fc341da4-38c1-4668-9ab2-11eea5816ec7))
+    (pin "1" (uuid bc47019e-6908-4feb-b7a7-19e51fc53e8d))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -3043,7 +3095,7 @@
   (symbol (lib_id "Diode:1N4148W") (at 120.65 137.16 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061594b49)
-    (property "Reference" "D9" (at 115.57 132.08 90)
+    (property "Reference" "D10" (at 115.57 132.08 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148WS" (at 110.49 134.62 90)
@@ -3058,124 +3110,60 @@
     (property "LCSC" "C2128" (at 120.65 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0c7235c7-e099-45fa-a814-887143a42d78))
-    (pin "2" (uuid deb79dc6-f409-458a-b1c1-7735a600c941))
+    (pin "1" (uuid 3a7928a4-2d47-4742-a8d8-668963c6bdaa))
+    (pin "2" (uuid fd90fbae-1164-47e4-9dd2-d7fb3a8087a2))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "D9") (unit 1)
+          (reference "D10") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Diode:BZX84Cxx") (at 128.27 102.87 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000061869f2a)
-    (property "Reference" "D14" (at 128.27 97.3582 0)
+  (symbol (lib_id "Detonation:SMAJ30CA") (at 127 102.87 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 13a1169f-6814-4d68-be6c-5c34cfb7c2ed)
+    (property "Reference" "D15" (at 127 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "DDZ36-7" (at 125.73 100.33 0)
+    (property "Value" "SMF30CA" (at 127 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_SOD-123" (at 128.27 98.425 0)
+    (property "Footprint" "Diode_SMD:D_SOD-123F" (at 127 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf" (at 128.27 102.87 0)
+    (property "Datasheet" "SMF30CA" (at 127 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C444414" (at 128.27 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ca2e9bd9-695d-41ab-bd32-823a8aa3fe19))
-    (pin "2" (uuid f7130fb1-a1e1-4e73-85f4-c7f7ccae3048))
+    (pin "1" (uuid cd3329a5-596e-4d0a-b2d5-bcd831ef7359))
+    (pin "2" (uuid c72553b0-4aff-4247-be67-81df99ffb07e))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "D14") (unit 1)
+          (reference "D15") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Diode:BZX84Cxx") (at 193.04 102.87 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000061872e4e)
-    (property "Reference" "D12" (at 193.04 97.3582 0)
+  (symbol (lib_id "Detonation:SMAJ30CA") (at 193.04 102.87 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1d845cf5-7aa9-43f6-bbff-5d533f11d5c0)
+    (property "Reference" "D13" (at 193.04 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "DDZ36-7" (at 190.5 100.33 0)
+    (property "Value" "SMF30CA" (at 193.04 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_SOD-123" (at 193.04 98.425 0)
+    (property "Footprint" "Diode_SMD:D_SOD-123F" (at 193.04 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf" (at 193.04 102.87 0)
+    (property "Datasheet" "SMF30CA" (at 193.04 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C444414" (at 193.04 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d4ab44ed-6c1c-45ba-a06c-3624ca21735d))
-    (pin "2" (uuid 099746fa-0008-4f13-9d22-973d62784501))
-    (instances
-      (project "Pre_Ignition"
-        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "D12") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Diode:BZX84Cxx") (at 194.31 133.35 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000061873791)
-    (property "Reference" "D11" (at 194.31 127.8382 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "DDZ36-7" (at 191.77 130.81 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_SOD-123" (at 194.31 128.905 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf" (at 194.31 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C444414" (at 194.31 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 28c08f02-c03a-4337-99a2-7c8f9b2b399e))
-    (pin "2" (uuid 3da51d6c-bdf2-4388-9e27-94deaed47f1c))
-    (instances
-      (project "Pre_Ignition"
-        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
-          (reference "D11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Diode:BZX84Cxx") (at 128.27 132.08 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000618741f6)
-    (property "Reference" "D13" (at 128.27 126.5682 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "DDZ36-7" (at 125.73 129.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Diode_SMD:D_SOD-123" (at 128.27 127.635 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf" (at 128.27 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C444414" (at 128.27 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e9c490c7-8c22-4467-ae71-88539189f2cf))
-    (pin "2" (uuid 11dba609-b104-47e9-8d9d-bde5dd1f0468))
+    (pin "1" (uuid 80f9fb30-15c0-4bb1-a2da-74bc05d1363f))
+    (pin "2" (uuid e4fe8a75-e314-439d-a7bb-7831ae30214f))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -3200,11 +3188,63 @@
     (property "Datasheet" "" (at 100.33 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fb843228-e20b-4cc5-961a-2a67ba9e79f1))
+    (pin "1" (uuid 36e86de0-f695-49b2-9c8b-84b1a0959d84))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
           (reference "#PWR046") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Detonation:SMAJ30CA") (at 193.04 133.35 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 65e72767-c3c6-44db-aca4-7f09061ea7d1)
+    (property "Reference" "D12" (at 193.04 127 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SMF30CA" (at 193.04 129.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123F" (at 193.04 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "SMF30CA" (at 193.04 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5d0b2e76-1f38-4820-85c1-d78abae7a3fa))
+    (pin "2" (uuid ef5735b1-2789-4c17-abff-5f8e9fc48762))
+    (instances
+      (project "Pre_Ignition"
+        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
+          (reference "D12") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Detonation:SMAJ30CA") (at 128.27 132.08 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 71d5226c-0d22-42ce-b47c-e6859d9f5b39)
+    (property "Reference" "D14" (at 128.27 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SMF30CA" (at 128.27 128.27 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123F" (at 128.27 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "SMF30CA" (at 128.27 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 73f0ff66-bf90-4e52-9f99-dfe6d39a98f1))
+    (pin "2" (uuid c744fd02-8378-49f3-a2fb-efbacaff3084))
+    (instances
+      (project "Pre_Ignition"
+        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
+          (reference "D14") (unit 1)
         )
       )
     )
@@ -3225,7 +3265,7 @@
     (property "Datasheet" "" (at 259.08 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 10e42ba4-22eb-4a86-91d3-433b7eca0a16))
+    (pin "1" (uuid 724e29bb-7d05-4dd4-9a4a-d01eb4015154))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -3250,7 +3290,7 @@
     (property "Datasheet" "" (at 172.72 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid db66bd39-8a9d-4b77-ad39-28f62e870445))
+    (pin "1" (uuid 68dc56c7-eb4a-45fb-97d9-9f9247d18725))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -3275,7 +3315,7 @@
     (property "Datasheet" "" (at 66.04 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f929947-37d4-46e5-8174-19c83d08096c))
+    (pin "1" (uuid 9bcb092b-a11c-4967-ace7-81c080ae8543))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdae25"
@@ -3306,9 +3346,9 @@
     (property "Datasheet" "~" (at 72.39 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3c9c2667-f423-4dc3-ac05-9984370f4262))
-    (pin "2" (uuid f19e2a77-dc1f-4245-9f48-77da270a755f))
-    (pin "3" (uuid a5e9df0b-0b4d-4830-8b34-ced65f340874))
+    (pin "1" (uuid 999a9964-fbe5-4aa4-b835-437fc11cf880))
+    (pin "2" (uuid 4cc0714e-4c77-4357-9796-fb0d5a41298e))
+    (pin "3" (uuid 467d8961-2828-41fb-83ce-0063d19a022f))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
@@ -3333,7 +3373,7 @@
     (property "Datasheet" "" (at 187.96 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 196a992b-fbb9-406c-8783-9d91c87715cd))
+    (pin "1" (uuid e04096f6-afc0-47d5-901f-39519724ce96))
     (instances
       (project "Pre_Ignition"
         (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5/00000000-0000-0000-0000-000060bdff19"
