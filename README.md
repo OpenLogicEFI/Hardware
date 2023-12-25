@@ -1,11 +1,11 @@
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fwww.detonationems.com%2F)
 
-# [DetonationEMS](https://www.detonationems.com)
-- www.detonationems.com
+# [OpenLogicEFI](https://www.detonationems.com)
+Formerly: DetonationEMS
 
 </div>
 
-DetonationEMS ECU's are based off an open source project called Speeduino by Josh Stewart. Currently all released boards use official Speeduino firmware. In TunerStudio set to "Board Layout" to "Speeduino 0.4"
+OpenLogicEFI ECU's are based off an open source project called Speeduino by Josh Stewart. Currently all released boards use official Speeduino firmware. In TunerStudio set to "Board Layout" to "Speeduino 0.4"
 
 </div>
 
