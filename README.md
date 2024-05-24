@@ -24,6 +24,6 @@ All designs are released under the [TAPR Open Hardware License v1.0](https://fil
 
 - [Official Speeduino Discord](https://discord.gg/jcmar3zfSJ)
 
-- [Additional Documentation and Links](https://www.detonationems.com/support)
+- [Additional Documentation and Links](https://www.openlogicefi.com/support)
 
 </div>
