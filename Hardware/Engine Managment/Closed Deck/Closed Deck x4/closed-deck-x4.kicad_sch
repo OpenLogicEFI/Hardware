@@ -1,0 +1,395 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "929a9b03-e99e-4b88-8e16-759f8c6b59a5")
+	(paper "USLetter")
+	(title_block
+		(title "Closed Deck X4")
+		(date "2024-04-25")
+		(rev "A")
+		(company "OpenLogicEFI")
+		(comment 1 "openlogicefi.com")
+	)
+	(lib_symbols)
+	(text "©2024 OpenLogicEFI (Aaron S.)"
+		(exclude_from_sim no)
+		(at 99.06 64.516 0)
+		(effects
+			(font
+				(size 2.25 2.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "18b9a005-8eac-4eea-b530-a87671e42131")
+	)
+	(text "(Formerly DetonationEMS)"
+		(exclude_from_sim no)
+		(at 102.489 69.85 0)
+		(effects
+			(font
+				(size 2.25 2.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d72a82a-1eb0-47fc-a6c4-b618c00997bd")
+	)
+	(text "OpenLogicEFI ECU's are designed for use with Speeduino firmware.\n - https://github.com/noisymime/speeduino\n\nBoard Selection in tuner studio for this ECU is \"Speeduino v0.4\"\n\nOpenLogicEFI GitHub - https://github.com/OpenLogicEFI\n\nSpeeduino Official GitHub - https://github.com/noisymime/speeduino\n\nPlease consider sponsoring Speeduino and Josh on github\nso he can advance his efforts.\nhttps://github.com/sponsors/noisymime"
+		(exclude_from_sim no)
+		(at 15.24 201.295 0)
+		(effects
+			(font
+				(size 2.4892 2.4892)
+			)
+			(justify left bottom)
+		)
+		(uuid "b31cd59e-2cf6-4eef-965d-11f30da9b8c3")
+	)
+	(text "Closed Deck X4"
+		(exclude_from_sim no)
+		(at 97.028 57.912 0)
+		(effects
+			(font
+				(size 8 8)
+				(thickness 1.6)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d70d1cd3-1668-4688-8eb7-f773efb7bb87")
+	)
+	(text "PN:CDX4a"
+		(exclude_from_sim no)
+		(at 174.498 64.262 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.7)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "da86412e-e28b-40b3-884c-486313b5e1b6")
+	)
+	(text "OpenLogicEFI.com"
+		(exclude_from_sim no)
+		(at 196.342 181.102 0)
+		(effects
+			(font
+				(size 2.25 2.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "f03cfc76-381b-47a3-b5e9-b4e061afa153")
+	)
+	(sheet
+		(at 106.045 82.55)
+		(size 16.51 14.605)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000060bdae25")
+		(property "Sheetname" "Primary Connector"
+			(at 106.045 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connector.kicad_sch"
+			(at 106.045 94.5646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "closed-deck-x4"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 204.47 82.55)
+		(size 16.51 14.605)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000060bdff19")
+		(property "Sheetname" "Fuel-Ignition"
+			(at 204.47 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "fuel-ignition.kicad_sch"
+			(at 204.47 94.5646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "closed-deck-x4"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 184.785 82.55)
+		(size 16.51 14.605)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000060bec240")
+		(property "Sheetname" "Analog-inputs"
+			(at 184.785 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "input.kicad_sch"
+			(at 184.785 94.5646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "closed-deck-x4"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 145.415 82.55)
+		(size 16.51 14.605)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000060e7aa2a")
+		(property "Sheetname" "Output"
+			(at 145.415 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "output.kicad_sch"
+			(at 145.415 94.5646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "closed-deck-x4"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 86.36 82.55)
+		(size 16.51 14.605)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7eb070f0-0972-48f3-b1a2-7aec03db60dd")
+		(property "Sheetname" "MCU"
+			(at 86.36 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 86.36 97.7396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "closed-deck-x4"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 66.675 82.55)
+		(size 16.51 14.605)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9c074c3b-1726-457f-9ccb-fe178788ecee")
+		(property "Sheetname" "Power Supply"
+			(at 66.675 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "powersupply.kicad_sch"
+			(at 66.675 97.7396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "closed-deck-x4"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "1")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 125.73 82.55)
+		(size 16.51 14.605)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f5d0a587-bd89-4f20-87a1-ffa1c87672fb")
+		(property "Sheetname" "Coms"
+			(at 125.73 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 125.73 97.7396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "closed-deck-x4"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 82.55)
+		(size 16.51 14.605)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f706db0f-aad4-4219-b413-dd534f24044a")
+		(property "Sheetname" "Digital-inputs"
+			(at 165.1 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "digital-inputs.kicad_sch"
+			(at 165.1 97.7396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "closed-deck-x4"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
