@@ -1,151 +1,326 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 929a9b03-e99e-4b88-8e16-759f8c6b59a5)
-
-  (paper "USLetter")
-
-  (title_block
-    (title "Pre-Ignition X4")
-    (date "2023-10-24")
-    (rev "C")
-    (company "DetonationEMS")
-    (comment 1 "detonationems.com")
-  )
-
-  (lib_symbols
-  )
-
-
-  (text "Pre-Ignition x4 is a 4 channel, (4 indavidually controlled ignition and injector outputs)\nUniversal Standalone Engine Managment System.\n\nBoard Selection in tuner studio for this ECU is \"Speeduino v0.4\""
-    (at 57.15 77.47 0)
-    (effects (font (size 2.54 2.54)) (justify left bottom))
-    (uuid 000377f2-e261-4ad7-bd12-d63122282b82)
-  )
-  (text "© 2023 DetonationEMS (Aaron S.)" (at 88.9 57.15 0)
-    (effects (font (size 2.54 2.54)) (justify left bottom))
-    (uuid 061b0d13-c1fa-4dc3-9bbf-2c4234a9b559)
-  )
-  (text "Pre-Ignition x4" (at 87.63 50.8 0)
-    (effects (font (size 9 9) (thickness 1.8) bold) (justify left bottom))
-    (uuid 40912c79-aab3-4163-a5a2-35db6c0b8f99)
-  )
-  (text "DetonationEMS.com" (at 160.02 180.34 0)
-    (effects (font (size 5 5) (thickness 1) bold) (justify left bottom))
-    (uuid 4332f15b-f605-469a-840f-63a905ed8abe)
-  )
-  (text "DetonationEMS ECU's are powered by an open source\nproject called Speeduino by Josh Stewart.\n\nDetonationEMS GitHub - https://github.com/DetonationEMS\nSpeeduino Official GitHub - https://github.com/noisymime/speeduino\n\nIf you are happy with DetonationEMS and Speeduino Compatible\ndevices, Firmware and/or Software. Please consider sponsoring\nJosh on github so he can advance his efforts.\n\nhttps://github.com/sponsors/noisymime"
-    (at 17.78 198.12 0)
-    (effects (font (size 2.4892 2.4892)) (justify left bottom))
-    (uuid b742349c-2dae-4d12-81a1-0b272c795aae)
-  )
-  (text "PN:MX4C" (at 176.53 57.15 0)
-    (effects (font (size 2.54 2.54) (thickness 0.7) bold) (justify left bottom))
-    (uuid cb9907c8-85e5-45e1-875b-b1c48b47dc88)
-  )
-
-  (sheet (at 119.38 86.36) (size 19.05 17.78) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-000060bdae25)
-    (property "Sheetname" "Connector" (at 119.38 85.6484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "Connector.kicad_sch" (at 119.38 104.7246 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (instances
-      (project "Pre_Ignition"
-        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5" (page "4"))
-      )
-    )
-  )
-
-  (sheet (at 144.78 86.36) (size 19.05 17.78) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-000060bdff19)
-    (property "Sheetname" "Fuel-Ignition" (at 144.78 85.6484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "Fuel-Ignition.kicad_sch" (at 144.78 104.7246 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (instances
-      (project "Pre_Ignition"
-        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5" (page "5"))
-      )
-    )
-  )
-
-  (sheet (at 195.58 86.36) (size 19.05 17.78) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-000060bec240)
-    (property "Sheetname" "Inputs" (at 195.58 85.6484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "Analog.kicad_sch" (at 195.58 104.7246 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (instances
-      (project "Pre_Ignition"
-        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5" (page "7"))
-      )
-    )
-  )
-
-  (sheet (at 170.18 86.36) (size 19.05 17.78) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-000060e7aa2a)
-    (property "Sheetname" "Additonal Outputs" (at 170.18 85.6484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "Output.kicad_sch" (at 170.18 104.7246 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (instances
-      (project "Pre_Ignition"
-        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5" (page "6"))
-      )
-    )
-  )
-
-  (sheet (at 68.58 86.36) (size 19.05 17.78) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 651424fd-2282-475b-821e-32691fc06f26)
-    (property "Sheetname" "MCU" (at 68.58 85.6484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "mcu.kicad_sch" (at 68.58 104.7246 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (instances
-      (project "Pre_Ignition"
-        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 93.98 86.36) (size 19.05 17.78) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid fd679192-a7db-468f-89ad-a9c384ea113f)
-    (property "Sheetname" "Power" (at 93.98 85.6484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "power.kicad_sch" (at 93.98 104.7246 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (instances
-      (project "Pre_Ignition"
-        (path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5" (page "2"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "929a9b03-e99e-4b88-8e16-759f8c6b59a5")
+	(paper "USLetter")
+	(title_block
+		(title "Pre-Ignition X4")
+		(date "2023-10-24")
+		(rev "C")
+		(company "DetonationEMS")
+		(comment 1 "detonationems.com")
+	)
+	(lib_symbols)
+	(text "Pre-Ignition x4 is a 4 channel, (4 indavidually controlled ignition and injector outputs)\nUniversal Standalone Engine Managment System.\n\nBoard Selection in tuner studio for this ECU is \"Speeduino v0.4\""
+		(exclude_from_sim no)
+		(at 57.15 77.47 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "000377f2-e261-4ad7-bd12-d63122282b82")
+	)
+	(text "© 2023 DetonationEMS (Aaron S.)"
+		(exclude_from_sim no)
+		(at 88.9 57.15 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "061b0d13-c1fa-4dc3-9bbf-2c4234a9b559")
+	)
+	(text "Pre-Ignition x4"
+		(exclude_from_sim no)
+		(at 87.63 50.8 0)
+		(effects
+			(font
+				(size 9 9)
+				(thickness 1.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "40912c79-aab3-4163-a5a2-35db6c0b8f99")
+	)
+	(text "DetonationEMS.com"
+		(exclude_from_sim no)
+		(at 160.02 180.34 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 1)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4332f15b-f605-469a-840f-63a905ed8abe")
+	)
+	(text "DetonationEMS ECU's are powered by an open source\nproject called Speeduino by Josh Stewart.\n\nDetonationEMS GitHub - https://github.com/DetonationEMS\nSpeeduino Official GitHub - https://github.com/noisymime/speeduino\n\nIf you are happy with DetonationEMS and Speeduino Compatible\ndevices, Firmware and/or Software. Please consider sponsoring\nJosh on github so he can advance his efforts.\n\nhttps://github.com/sponsors/noisymime"
+		(exclude_from_sim no)
+		(at 17.78 198.12 0)
+		(effects
+			(font
+				(size 2.4892 2.4892)
+			)
+			(justify left bottom)
+		)
+		(uuid "b742349c-2dae-4d12-81a1-0b272c795aae")
+	)
+	(text "PN:MX4C"
+		(exclude_from_sim no)
+		(at 176.53 57.15 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.7)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb9907c8-85e5-45e1-875b-b1c48b47dc88")
+	)
+	(sheet
+		(at 119.38 86.36)
+		(size 19.05 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000060bdae25")
+		(property "Sheetname" "Connector"
+			(at 119.38 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connector.kicad_sch"
+			(at 119.38 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Pre_Ignition"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 144.78 86.36)
+		(size 19.05 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000060bdff19")
+		(property "Sheetname" "Fuel-Ignition"
+			(at 144.78 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Fuel-Ignition.kicad_sch"
+			(at 144.78 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Pre_Ignition"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 195.58 86.36)
+		(size 19.05 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000060bec240")
+		(property "Sheetname" "Inputs"
+			(at 195.58 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Analog.kicad_sch"
+			(at 195.58 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Pre_Ignition"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 170.18 86.36)
+		(size 19.05 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000060e7aa2a")
+		(property "Sheetname" "Additonal Outputs"
+			(at 170.18 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Output.kicad_sch"
+			(at 170.18 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Pre_Ignition"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 86.36)
+		(size 19.05 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "651424fd-2282-475b-821e-32691fc06f26")
+		(property "Sheetname" "MCU"
+			(at 68.58 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 68.58 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Pre_Ignition"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 93.98 86.36)
+		(size 19.05 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fd679192-a7db-468f-89ad-a9c384ea113f")
+		(property "Sheetname" "Power"
+			(at 93.98 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 93.98 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Pre_Ignition"
+				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
