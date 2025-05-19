@@ -1,5 +1,5 @@
-# DetonStim
+# Engine Simulator
 
-www.detonationems.com
+www.openlogicefi.com
 
 Engine Simulator for Speeduino fork of Ardustim - https://github.com/speeduino/Ardu-Stim

@@ -1,0 +1,217 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d1f066ce-c604-4d6e-b0fe-1875898f55f3")
+	(paper "A4")
+	(title_block
+		(title "Engine Simulator")
+		(date "2025-02-28")
+		(rev "Production B2")
+		(company "OpenLogicEFI")
+	)
+	(lib_symbols)
+	(text "This product uses an Arduino Nano (328p). The Speeduino fork of Ardustim\nfirmware that can simulate a variety of output patterns and options set \nthough free software. Both code and software are open-souce.\n\nSoftware and Code can be found at:\nhttps://github.com/speeduino/Ardu-Stim"
+		(exclude_from_sim no)
+		(at 20.32 91.44 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "1062b611-d252-40c1-8b73-5695c47f7817")
+	)
+	(text "Engine Simulator\nDesign by Detonation (openlogicefi.com)"
+		(exclude_from_sim no)
+		(at 179.07 175.26 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "1eb473a7-2f4f-4a60-a38d-bf7eb1d1b80c")
+	)
+	(text "(AKA Detonation)"
+		(exclude_from_sim no)
+		(at 127.635 53.975 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "40ca1eaf-974c-4c5c-905d-9d3609397a82")
+	)
+	(text "Other common non-powered resistive outputs such as CLT, IAT, are\nsimulated through potentiometers. Powered resistive outputs such as\nTPS and MAP are simulated through a 5v onboard reference."
+		(exclude_from_sim no)
+		(at 20.32 143.51 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "6f222544-7312-466b-a4de-1c9086d44bc1")
+	)
+	(text "© 2025 OpenLogicEFI (Aaron S.)"
+		(exclude_from_sim no)
+		(at 82.55 48.26 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "a391e602-ab86-4204-ac31-c91749542c5a")
+	)
+	(text "Simple Engine Simulator"
+		(exclude_from_sim no)
+		(at 81.28 40.64 0)
+		(effects
+			(font
+				(size 8 8)
+				(thickness 0.9)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e128d069-5406-4974-8731-c10e78d090e9")
+	)
+	(sheet
+		(at 128.27 101.6)
+		(size 17.78 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4a1f4502-1df4-4930-9475-ef2815b13d97")
+		(property "Sheetname" "Input & LED's"
+			(at 128.27 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "input.kicad_sch"
+			(at 128.27 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Simulator"
+				(path "/d1f066ce-c604-4d6e-b0fe-1875898f55f3"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 106.68 101.6)
+		(size 17.78 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5f7b6b53-de5f-46e7-9ebf-4f1c6442c0f9")
+		(property "Sheetname" "MCU"
+			(at 106.68 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 106.68 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Simulator"
+				(path "/d1f066ce-c604-4d6e-b0fe-1875898f55f3"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 149.86 101.6)
+		(size 17.78 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f2f9b2f3-cfd3-4707-bfd8-2c2d1f573986")
+		(property "Sheetname" "Simulation"
+			(at 149.86 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "simulation.kicad_sch"
+			(at 149.86 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Simulator"
+				(path "/d1f066ce-c604-4d6e-b0fe-1875898f55f3"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

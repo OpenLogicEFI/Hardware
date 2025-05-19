@@ -1,0 +1,18 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid be794083-a4d2-483e-b4f7-bf51c3f063d0)
+
+  (paper "A4")
+
+  (title_block
+    (title "Closed Deck X4")
+    (date "2023-11-30")
+    (rev "Alpha")
+    (company "DetonationEMS")
+    (comment 1 "detonationems.com")
+  )
+
+  (lib_symbols
+  )
+
+)
