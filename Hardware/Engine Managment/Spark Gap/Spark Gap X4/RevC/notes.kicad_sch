@@ -1,0 +1,26 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "2da078b4-2e54-4973-b2ea-8b5db1483636")
+	(paper "A4")
+	(title_block
+		(title "Spark Gap x4")
+		(date "2025-05-18")
+		(rev "C")
+		(company "OpenLogicEFI")
+		(comment 1 "openlogicefi.com")
+	)
+	(lib_symbols)
+	(text "Spark Gap x4 revision changes:\n\nNotable usage changes:\nAdded ability to use alternative voltages for Ignition drivers through use of jumper wire.\n\nUsage:\nJP6/JP7 added to allow use of alternative ignition driver voltages.\nJP7 pin MUST be severed!. ONLY after JP7 is severed, use a jumper \nwire from alternative voltage source to J6. \n\n\nFootprint changes:\nMinor adjustments in VR conditioner area\nMinor adjustments in ignition driver area\nMinor adjustments in analog area\nReorganized Analog traces for better noise reduction\nReorganized Cam/Crank traces for better noise reduction\nReorganized traces under primary connector for better spacing\nAdded additional shotgun vias \n\nSilkscreen Changes:\nMinor location adjustments\nUpdated year to 2025\nUpdated model number\n"
+		(exclude_from_sim no)
+		(at 43.688 94.742 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+			(justify left)
+		)
+		(uuid "30bc8c5d-0b45-4e78-83e9-79553a47d59b")
+	)
+)
