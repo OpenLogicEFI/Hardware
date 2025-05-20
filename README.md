@@ -3,8 +3,6 @@
 # [OpenLogicEFI](https://www.openlogicefi.com)
 Formerly: DetonationEMS
 
-- DetonationEMS is currently undergoing a rebranding initiative and will soon be known as OpenLogicEFI. We want to emphasize that this change is limited to our name; the ownership and our unwavering commitment to providing excellent open-source products remain unchanged. As we transition, links may redirect between both DetonationEMS.com and OpenLogicEFI.com websites. Thank you for your continued support during this exciting phase of our journey.
-
 </div>
 
 OpenLogicEFI ECU's are based off an open source project called Speeduino by Josh Stewart. Currently all released boards use official Speeduino firmware. In TunerStudio set to "Board Layout" to "Speeduino 0.4"
