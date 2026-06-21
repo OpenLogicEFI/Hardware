@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "PMAP-M")
-		(date "2025-05-18")
+		(date "2026-05-06")
 		(rev "M (Map Only)")
 		(company "OpenLogicEFI")
 	)
@@ -1313,7 +1313,7 @@
 		)
 		(uuid "24bbea35-4b56-419e-ade0-575077f66b8f")
 	)
-	(text "© 2025 OpenLogicEFI (Aaron S.)"
+	(text "© 2026 OpenLogicEFI (Aaron S.)"
 		(exclude_from_sim no)
 		(at 99.06 60.96 0)
 		(effects

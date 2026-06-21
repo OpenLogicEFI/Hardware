@@ -5,9 +5,9 @@
 	(uuid "96506ec2-caf8-48f2-bdf4-8957b32a7d08")
 	(paper "A4")
 	(title_block
-		(title "ICM2a")
-		(date "2025-05-18")
-		(rev "A")
+		(title "ICM2B")
+		(date "2026-05-06")
+		(rev "B")
 		(company "OpenLogicEFI")
 	)
 	(lib_symbols
