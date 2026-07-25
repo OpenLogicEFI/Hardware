@@ -286,7 +286,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "B2"
+      "sch_revision": "4"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -1043,17 +1043,13 @@
         "uuid": "929a9b03-e99e-4b88-8e16-759f8c6b59a5"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C60",
     "variants": []
   },
   "sheets": [
     [
       "929a9b03-e99e-4b88-8e16-759f8c6b59a5",
       "closed-deck-x4"
-    ],
-    [
-      "9c074c3b-1726-457f-9ccb-fe178788ecee",
-      "Power Supply"
     ],
     [
       "7eb070f0-0972-48f3-b1a2-7aec03db60dd",
@@ -1082,6 +1078,10 @@
     [
       "f706db0f-aad4-4219-b413-dd534f24044a",
       "Digital-inputs"
+    ],
+    [
+      "9c074c3b-1726-457f-9ccb-fe178788ecee",
+      "Power Supply"
     ]
   ],
   "text_variables": {},

@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Closed Deck X4")
-		(date "2026-05-06")
-		(rev "B2")
+		(date "2026-01-03")
+		(rev "4")
 		(company "OpenLogicEFI")
 		(comment 1 "openlogicefi.com")
 	)
@@ -47,7 +47,7 @@
 		)
 		(uuid "d70d1cd3-1668-4688-8eb7-f773efb7bb87")
 	)
-	(text "PN:CDX4B Rev:2"
+	(text "PN:CDX4A Rev:4"
 		(exclude_from_sim no)
 		(at 169.926 82.55 0)
 		(effects
@@ -342,7 +342,7 @@
 		(instances
 			(project "closed-deck-x4"
 				(path "/929a9b03-e99e-4b88-8e16-759f8c6b59a5"
-					(page "1")
+					(page "9")
 				)
 			)
 		)

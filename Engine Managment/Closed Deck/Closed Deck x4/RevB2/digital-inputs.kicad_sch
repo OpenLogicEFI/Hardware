@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Closed Deck X4")
-		(date "2026-05-06")
-		(rev "B2")
+		(date "2026-01-03")
+		(rev "4")
 		(company "OpenLogicEFI")
 		(comment 1 "openlogicefi.com")
 	)
