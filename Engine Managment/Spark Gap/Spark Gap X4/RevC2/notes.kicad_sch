@@ -1,0 +1,15 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2da078b4-2e54-4973-b2ea-8b5db1483636")
+	(paper "A4")
+	(title_block
+		(title "Spark Gap x4")
+		(date "2026-09-29")
+		(rev "C2")
+		(company "OpenLogicEFI")
+		(comment 1 "openlogicefi.com")
+	)
+	(lib_symbols)
+)
