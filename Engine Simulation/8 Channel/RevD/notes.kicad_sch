@@ -1,0 +1,25 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "62425242-e91c-4f95-adac-ccd0a67684be")
+	(paper "A4")
+	(title_block
+		(title "Engine Simulator")
+		(date "2025-02-28")
+		(rev "Production B2")
+		(company "OpenLogicEFI")
+	)
+	(lib_symbols)
+	(text "Revision change notes:\nAdded additional protection to analog inputs"
+		(exclude_from_sim no)
+		(at 94.234 80.01 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+			(justify left)
+		)
+		(uuid "1ded44e0-6bb7-4b21-bc9d-1dd4b07655ad")
+	)
+)
