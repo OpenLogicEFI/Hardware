@@ -7,9 +7,7 @@ It is compact and feature-rich, utilizing an off-the-shelf case and connector.
 Board Selection in tuner studio for this ECU is "Speeduino v0.4"
 
 RevA: Initial Release 2024
-
 RevB: Never released
-
 RevC: Released 2025
-
+RevC2: Released 2026
 www.OpenLogicEFI.com
